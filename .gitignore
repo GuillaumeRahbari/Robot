@@ -28,4 +28,4 @@
 *.app
 
 # Les vpp temporaires
-*.vpp~
+*.vpp~*
