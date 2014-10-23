@@ -26,3 +26,6 @@
 *.exe
 *.out
 *.app
+
+# Les vpp temporaires
+*.vpp~
