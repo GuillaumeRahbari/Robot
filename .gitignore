@@ -29,3 +29,6 @@
 
 # Les vpp temporaires
 *.vpp~*
+
+#le fichier robot
+Robot
