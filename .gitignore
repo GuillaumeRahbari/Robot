@@ -32,3 +32,6 @@
 
 #le fichier robot
 Robot
+
+#Xcode
+*.xcodeproj*
