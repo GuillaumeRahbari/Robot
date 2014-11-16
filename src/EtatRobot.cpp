@@ -11,7 +11,7 @@ void Robot::EtatRobot::repartir() {
 }
 
 Robot::EtatRobot Robot::EtatRobot::tourner() {
-    return *new EtatRobot();
+    throw "Vous ne pouvez pas vous déplacer quand vous êtes figé";
 }
 
 void Robot::EtatRobot::saisir() {

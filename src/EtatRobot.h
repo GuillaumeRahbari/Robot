@@ -1,3 +1,16 @@
+//
+//  EtatRobot.h
+//  Robot
+//
+//  Created by Guillaume Rahbari on 16/11/2014.
+//  Copyright (c) 2014 Guillaume Rahbari. All rights reserved.
+//
+
+#ifndef Robot_EtatRobot_h
+#define Robot_EtatRobot_h
+
+#include <stddef.h>
+
 namespace Robot {
 	class EtatRobot {
         
@@ -23,3 +36,5 @@ namespace Robot {
 		void afficher();
 	};
 }
+
+#endif

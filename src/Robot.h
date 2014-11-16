@@ -1,8 +1,20 @@
+//
+//  Robot.h
+//  Robot
+//
+//  Created by Guillaume Rahbari on 16/11/2014.
+//  Copyright (c) 2014 Guillaume Rahbari. All rights reserved.
+//
+
+#ifndef Robot_Robot_h
+#define Robot_Robot_h
+
 #include <string>
 #include "EtatRobot.h"
 #include "Vue.h"
 #include "Objet.h"
 #include "Plot.h"
+#include <stddef.h>
 
 using namespace std;
 
@@ -37,3 +49,5 @@ namespace Robot {
 		void afficher();
 	};
 }
+
+#endif

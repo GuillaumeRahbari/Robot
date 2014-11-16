@@ -1,13 +1,17 @@
 #include "AVide.h"
 
+Robot::AVide* Robot::AVide::INSTANCE = NULL;
+
 Robot::AVide::AVide() {
 	// TODO - implement AVide::AVide
 	throw "Not yet implemented";
 }
 
-Robot::AVide Robot::AVide::getInstance() {
-	// TODO - implement AVide::getInstance
-	throw "Not yet implemented";
+Robot::AVide* Robot::AVide::getInstance() {
+    if (!INSTANCE) {
+        INSTANCE = new AVide;
+    }
+    return INSTANCE;
 }
 
 void Robot::AVide::avancer() {
@@ -16,8 +20,7 @@ void Robot::AVide::avancer() {
 }
 
 Robot::EtatRobot Robot::AVide::tourner() {
-	// TODO - implement AVide::tourner
-	throw "Not yet implemented";
+    return (EtatRobot)getInstance();
 }
 
 void Robot::AVide::rencontrerPlot() {
