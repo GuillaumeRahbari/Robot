@@ -3,9 +3,10 @@
 namespace Robot {
 	class Figer : Robot::EtatRobot {
 
-	public:
+	private:
 		int etat;
-
+        
+    public:
 		void repartir();
 
 		void afficher();

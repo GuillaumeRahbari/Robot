@@ -1,16 +1,16 @@
 #include "Robot.h"
 
-void Robot::Robot::avancer(int int_x, int int_y) {
+void Robot::Robot::avancer(int x, int y) {
 	// TODO - implement Robot::avancer
 	throw "Not yet implemented";
 }
 
-void Robot::Robot::tourner(int String_direction) {
-	// TODO - implement Robot::tourner
-	throw "Not yet implemented";
+void Robot::Robot::tourner(string direction) {
+    etat = etat.tourner();
+    ordre = "tourner" + direction;
 }
 
-void Robot::Robot::saisir(int Objet_o) {
+void Robot::Robot::saisir(Objet o) {
 	// TODO - implement Robot::saisir
 	throw "Not yet implemented";
 }
@@ -25,7 +25,7 @@ int Robot::Robot::peser() {
 	throw "Not yet implemented";
 }
 
-void Robot::Robot::rencontrerPlot(int Plot_p) {
+void Robot::Robot::rencontrerPlot(Plot p) {
 	// TODO - implement Robot::rencontrerPlot
 	throw "Not yet implemented";
 }

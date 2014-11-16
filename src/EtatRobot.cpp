@@ -11,8 +11,7 @@ void Robot::EtatRobot::repartir() {
 }
 
 Robot::EtatRobot Robot::EtatRobot::tourner() {
-	// TODO - implement EtatRobot::tourner
-	throw "Not yet implemented";
+    return *new EtatRobot();
 }
 
 void Robot::EtatRobot::saisir() {

@@ -1,6 +1,8 @@
 #include <string>
 #include "EtatRobot.h"
 #include "Vue.h"
+#include "Objet.h"
+#include "Plot.h"
 
 using namespace std;
 
@@ -14,17 +16,17 @@ namespace Robot {
 		string ordre;
 
 	public:
-		void avancer(int int_x, int int_y);
+		void avancer(int x, int y);
 
-		void tourner(int String_direction);
+		void tourner(string direction);
 
-		void saisir(int Objet_o);
+		void saisir(Objet o);
 
 		void poser();
 
 		int peser();
 
-		void rencontrerPlot(int Plot_p);
+		void rencontrerPlot(Plot p);
 
 		int evaluerPlot();
 
