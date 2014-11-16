@@ -5,7 +5,7 @@ Robot::AVideFacePlot::AVideFacePlot() {
 	throw "Not yet implemented";
 }
 
-static Robot::AVideFacePlot Robot::AVideFacePlot::getInstance() {
+Robot::AVideFacePlot Robot::AVideFacePlot::getInstance() {
 	// TODO - implement AVideFacePlot::getInstance
 	throw "Not yet implemented";
 }

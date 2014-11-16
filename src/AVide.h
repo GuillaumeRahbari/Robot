@@ -1,5 +1,7 @@
+#include "EnRoute.h"
+
 namespace Robot {
-	class AVide : Robot::EnRoute, Robot::EnRoute {
+	class AVide : Robot::EnRoute {
 
 	private:
 		static Robot::AVide INSTANCE;

@@ -5,7 +5,7 @@ Robot::enChargeFacePlot::enChargeFacePlot() {
 	throw "Not yet implemented";
 }
 
-static Robot::enChargeFacePlot Robot::enChargeFacePlot::getInstance() {
+Robot::enChargeFacePlot Robot::enChargeFacePlot::getInstance() {
 	// TODO - implement enChargeFacePlot::getInstance
 	throw "Not yet implemented";
 }

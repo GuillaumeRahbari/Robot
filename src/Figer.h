@@ -1,3 +1,5 @@
+#include "EtatRobot.h"
+
 namespace Robot {
 	class Figer : Robot::EtatRobot {
 

@@ -1,13 +1,12 @@
 namespace Robot {
 	class EtatRobot {
-
-
+        
 	public:
 		void figer();
 
 		void repartir();
 
-		Robot::EtatRobot tourner();
+		EtatRobot tourner();
 
 		void saisir();
 

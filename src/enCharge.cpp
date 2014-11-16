@@ -5,7 +5,7 @@ Robot::enCharge::enCharge() {
 	throw "Not yet implemented";
 }
 
-static Robot::enCharge Robot::enCharge::getInstance() {
+Robot::enCharge Robot::enCharge::getInstance() {
 	// TODO - implement enCharge::getInstance
 	throw "Not yet implemented";
 }

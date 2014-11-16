@@ -1,3 +1,5 @@
+#include "EnRoute.h"
+
 namespace Robot {
 	class enChargeFacePlot : Robot::EnRoute {
 

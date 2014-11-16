@@ -1,3 +1,9 @@
+#include <string>
+#include "EtatRobot.h"
+#include "Vue.h"
+
+using namespace std;
+
 namespace Robot {
 	class Robot {
 

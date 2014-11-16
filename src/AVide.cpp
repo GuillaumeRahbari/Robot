@@ -5,7 +5,7 @@ Robot::AVide::AVide() {
 	throw "Not yet implemented";
 }
 
-static Robot::AVide Robot::AVide::getInstance() {
+Robot::AVide Robot::AVide::getInstance() {
 	// TODO - implement AVide::getInstance
 	throw "Not yet implemented";
 }
