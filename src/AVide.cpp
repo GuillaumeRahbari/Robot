@@ -21,7 +21,7 @@ void AVide::avancer() {
 }
 
 EtatRobot AVide::tourner() {
-    return (EtatRobot)*getInstance();
+    return *getInstance();
 }
 
 void AVide::rencontrerPlot() {
