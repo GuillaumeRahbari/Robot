@@ -9,7 +9,7 @@ AVide::AVide() {
 }
 
 AVide* AVide::getInstance() {
-    if (!INSTANCE) {
+    if (INSTANCE == NULL) {
         INSTANCE = new AVide;
     }
     return INSTANCE;
