@@ -1,36 +1,37 @@
 #include "enCharge.h"
+using namespace Robot;
 
-Robot::enCharge::enCharge() {
+enCharge::enCharge() {
 	// TODO - implement enCharge::enCharge
 	throw "Not yet implemented";
 }
 
-Robot::enCharge Robot::enCharge::getInstance() {
+enCharge enCharge::getInstance() {
 	// TODO - implement enCharge::getInstance
 	throw "Not yet implemented";
 }
 
-void Robot::enCharge::avancer() {
+void enCharge::avancer() {
 	// TODO - implement enCharge::avancer
 	throw "Not yet implemented";
 }
 
-Robot::EtatRobot Robot::enCharge::tourner() {
+EtatRobot enCharge::tourner() {
 	// TODO - implement enCharge::tourner
 	throw "Not yet implemented";
 }
 
-int Robot::enCharge::peser() {
+int enCharge::peser() {
 	// TODO - implement enCharge::peser
 	throw "Not yet implemented";
 }
 
-void Robot::enCharge::rencontrerPlot() {
+void enCharge::rencontrerPlot() {
 	// TODO - implement enCharge::rencontrerPlot
 	throw "Not yet implemented";
 }
 
-void Robot::enCharge::afficher() {
+void enCharge::afficher() {
 	// TODO - implement enCharge::afficher
 	throw "Not yet implemented";
 }

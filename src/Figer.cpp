@@ -1,11 +1,12 @@
 #include "Figer.h"
+using namespace Robot;
 
-void Robot::Figer::repartir() {
+void Figer::repartir() {
 	// TODO - implement Figer::repartir
 	throw "Not yet implemented";
 }
 
-void Robot::Figer::afficher() {
+void Figer::afficher() {
 	// TODO - implement Figer::afficher
 	throw "Not yet implemented";
 }

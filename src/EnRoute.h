@@ -12,7 +12,7 @@
 #include "EtatRobot.h"
 
 namespace Robot {
-	class EnRoute : Robot::EtatRobot {
+	class EnRoute : public EtatRobot {
 
 
 	public:

@@ -11,7 +11,7 @@
 
 #include "Afficheur.h"
 
-class Afficheur_1 : Afficheur {
+class Afficheur_1 : public Afficheur {
 
 
 public:

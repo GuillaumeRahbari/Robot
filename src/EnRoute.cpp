@@ -1,6 +1,7 @@
 #include "EnRoute.h"
+using namespace Robot;
 
-void Robot::EnRoute::figer() {
+void EnRoute::figer() {
 	// TODO - implement EnRoute::figer
 	throw "Not yet implemented";
 }

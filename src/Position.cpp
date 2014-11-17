@@ -1,17 +1,18 @@
 #include "Position.h"
+using namespace Robot;
 
-int Robot::Position::getX() {
+int Position::getX() {
 	return this->x;
 }
 
-void Robot::Position::setX(int x) {
+void Position::setX(int x) {
 	this->x = x;
 }
 
-int Robot::Position::getY() {
+int Position::getY() {
 	return this->y;
 }
 
-void Robot::Position::setY(int y) {
+void Position::setY(int y) {
 	this->y = y;
 }

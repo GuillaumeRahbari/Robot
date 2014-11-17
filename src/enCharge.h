@@ -12,19 +12,19 @@
 #include "EnRoute.h"
 
 namespace Robot {
-	class enCharge : Robot::EnRoute {
+	class enCharge : public EnRoute {
 
 	private:
-		static Robot::enCharge INSTANCE;
+		static enCharge INSTANCE;
 
 		enCharge();
 
 	public:
-		static Robot::enCharge getInstance();
+		static enCharge getInstance();
 
 		void avancer();
 
-		Robot::EtatRobot tourner();
+		EtatRobot tourner();
 
 		int peser();
 

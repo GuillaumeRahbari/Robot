@@ -12,19 +12,19 @@
 #include "EnRoute.h"
 
 namespace Robot {
-	class AVideFacePlot : Robot::EnRoute {
+	class AVideFacePlot : public EnRoute {
 
 	private:
-		static Robot::AVideFacePlot INSTANCE;
+		static AVideFacePlot INSTANCE;
 
 		AVideFacePlot();
 
 	public:
-		static Robot::AVideFacePlot getInstance();
+		static AVideFacePlot getInstance();
 
 		int evaluerPlot();
 
-		Robot::EtatRobot tourner();
+		EtatRobot tourner();
 
 		void saisir();
 

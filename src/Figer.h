@@ -12,7 +12,7 @@
 #include "EtatRobot.h"
 
 namespace Robot {
-	class Figer : Robot::EtatRobot {
+	class Figer : public EtatRobot {
 
 	private:
 		int etat;

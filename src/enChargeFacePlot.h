@@ -12,21 +12,21 @@
 #include "EnRoute.h"
 
 namespace Robot {
-	class enChargeFacePlot : Robot::EnRoute {
+	class enChargeFacePlot : public EnRoute {
 
 	private:
-		static Robot::enChargeFacePlot INSTANCE;
+		static enChargeFacePlot INSTANCE;
 
 		enChargeFacePlot();
 
 	public:
-		static Robot::enChargeFacePlot getInstance();
+		static enChargeFacePlot getInstance();
 
 		void poser();
 
 		int peser();
 
-		Robot::EtatRobot tourner();
+		EtatRobot tourner();
 
 		void afficher();
 	};

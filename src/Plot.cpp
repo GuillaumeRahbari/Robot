@@ -1,5 +1,6 @@
 #include "Plot.h"
+using namespace Robot;
 
-int Robot::Plot::getHauteur() {
+int Plot::getHauteur() {
 	return this->hauteur;
 }

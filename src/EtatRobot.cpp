@@ -1,50 +1,51 @@
 #include "EtatRobot.h"
+using namespace Robot;
 
-void Robot::EtatRobot::figer() {
+void EtatRobot::figer() {
 	// TODO - implement EtatRobot::figer
 	throw "Not yet implemented";
 }
 
-void Robot::EtatRobot::repartir() {
+void EtatRobot::repartir() {
 	// TODO - implement EtatRobot::repartir
 	throw "Not yet implemented";
 }
 
-Robot::EtatRobot Robot::EtatRobot::tourner() {
+EtatRobot EtatRobot::tourner() {
     throw "Vous ne pouvez pas vous déplacer quand vous êtes figé";
 }
 
-void Robot::EtatRobot::saisir() {
+void EtatRobot::saisir() {
 	// TODO - implement EtatRobot::saisir
 	throw "Not yet implemented";
 }
 
-void Robot::EtatRobot::avancer() {
+void EtatRobot::avancer() {
 	// TODO - implement EtatRobot::avancer
 	throw "Not yet implemented";
 }
 
-void Robot::EtatRobot::rencontrerPlot() {
+void EtatRobot::rencontrerPlot() {
 	// TODO - implement EtatRobot::rencontrerPlot
 	throw "Not yet implemented";
 }
 
-int Robot::EtatRobot::evaluerPlot() {
+int EtatRobot::evaluerPlot() {
 	// TODO - implement EtatRobot::evaluerPlot
 	throw "Not yet implemented";
 }
 
-void Robot::EtatRobot::peser() {
+void EtatRobot::peser() {
 	// TODO - implement EtatRobot::peser
 	throw "Not yet implemented";
 }
 
-void Robot::EtatRobot::poser() {
+void EtatRobot::poser() {
 	// TODO - implement EtatRobot::poser
 	throw "Not yet implemented";
 }
 
-void Robot::EtatRobot::afficher() {
+void EtatRobot::afficher() {
 	// TODO - implement EtatRobot::afficher
 	throw "Not yet implemented";
 }
