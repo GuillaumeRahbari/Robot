@@ -36,3 +36,5 @@ Robot
 
 #Xcode
 *.xcodeproj*
+/Debug/
+/Release/
