@@ -1,14 +1,15 @@
 #include "AVideFacePlot.h"
 using namespace Robot;
 
+AVideFacePlot* AVideFacePlot::INSTANCE = new AVideFacePlot();
+
 AVideFacePlot::AVideFacePlot() {
 	// TODO - implement AVideFacePlot::AVideFacePlot
 	throw "Not yet implemented";
 }
 
-AVideFacePlot AVideFacePlot::getInstance() {
-	// TODO - implement AVideFacePlot::getInstance
-	throw "Not yet implemented";
+AVideFacePlot* AVideFacePlot::getInstance() {
+	return INSTANCE;
 }
 
 int AVideFacePlot::evaluerPlot() {
@@ -17,8 +18,7 @@ int AVideFacePlot::evaluerPlot() {
 }
 
 EtatRobot AVideFacePlot::tourner() {
-	// TODO - implement AVideFacePlot::tourner
-	throw "Not yet implemented";
+	return AVide::getInstance();
 }
 
 void AVideFacePlot::saisir() {

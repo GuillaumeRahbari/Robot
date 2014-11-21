@@ -15,12 +15,12 @@ namespace Robot {
 	class AVideFacePlot : public EnRoute {
 
 	private:
-		static AVideFacePlot INSTANCE;
+		static AVideFacePlot* INSTANCE;
 
 		AVideFacePlot();
 
 	public:
-		static AVideFacePlot getInstance();
+		static AVideFacePlot* getInstance();
 
 		int evaluerPlot();
 
