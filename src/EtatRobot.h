@@ -34,6 +34,8 @@ namespace Robot {
 		void poser();
 
 		void afficher();
+
+		static EtatRobot* initialisation();
 	};
 }
 

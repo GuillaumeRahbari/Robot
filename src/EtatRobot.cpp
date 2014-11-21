@@ -49,3 +49,7 @@ void EtatRobot::afficher() {
 	// TODO - implement EtatRobot::afficher
 	throw "Not yet implemented";
 }
+
+static EtatRobot* initialisation(){
+	return AVide::getInstance();
+}
