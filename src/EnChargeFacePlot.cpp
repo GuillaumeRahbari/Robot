@@ -1,32 +1,32 @@
-#include "enChargeFacePlot.h"
+#include "EnChargeFacePlot.h"
 using namespace Robot;
 
-enChargeFacePlot::enChargeFacePlot() {
-	// TODO - implement enChargeFacePlot::enChargeFacePlot
+EnChargeFacePlot* EnChargeFacePlot::INSTANCE = new EnChargeFacePlot();
+
+EnChargeFacePlot::EnChargeFacePlot() {
+	// TODO - implement EnChargeFacePlot::EnChargeFacePlot
 	throw "Not yet implemented";
 }
 
-enChargeFacePlot enChargeFacePlot::getInstance() {
-	// TODO - implement enChargeFacePlot::getInstance
+EnChargeFacePlot* EnChargeFacePlot::getInstance() {
+	return INSTANCE;
+}
+
+void EnChargeFacePlot::poser() {
+	// TODO - implement EnChargeFacePlot::poser
 	throw "Not yet implemented";
 }
 
-void enChargeFacePlot::poser() {
-	// TODO - implement enChargeFacePlot::poser
+int EnChargeFacePlot::peser() {
+	// TODO - implement EnChargeFacePlot::peser
 	throw "Not yet implemented";
 }
 
-int enChargeFacePlot::peser() {
-	// TODO - implement enChargeFacePlot::peser
-	throw "Not yet implemented";
+EtatRobot EnChargeFacePlot::tourner() {
+	return EnCharge::getInstance();
 }
 
-EtatRobot enChargeFacePlot::tourner() {
-	// TODO - implement enChargeFacePlot::tourner
-	throw "Not yet implemented";
-}
-
-void enChargeFacePlot::afficher() {
-	// TODO - implement enChargeFacePlot::afficher
+void EnChargeFacePlot::afficher() {
+	// TODO - implement EnChargeFacePlot::afficher
 	throw "Not yet implemented";
 }

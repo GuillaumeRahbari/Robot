@@ -1,26 +1,26 @@
 //
-//  enChargeFacePlot.h
+//  EnChargeFacePlot.h
 //  Robot
 //
 //  Created by Guillaume Rahbari on 16/11/2014.
 //  Copyright (c) 2014 Guillaume Rahbari. All rights reserved.
 //
 
-#ifndef Robot_enChargeFacePlot_h
-#define Robot_enChargeFacePlot_h
+#ifndef Robot_EnChargeFacePlot_h
+#define Robot_EnChargeFacePlot_h
 
 #include "EnRoute.h"
 
 namespace Robot {
-	class enChargeFacePlot : public EnRoute {
+	class EnChargeFacePlot : public EnRoute {
 
 	private:
-		static enChargeFacePlot INSTANCE;
+		static EnChargeFacePlot* INSTANCE;
 
-		enChargeFacePlot();
+		EnChargeFacePlot();
 
 	public:
-		static enChargeFacePlot getInstance();
+		static EnChargeFacePlot* getInstance();
 
 		void poser();
 
