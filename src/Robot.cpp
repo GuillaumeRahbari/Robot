@@ -10,6 +10,7 @@ void Robot::avancer(int x, int y) {
 void Robot::tourner(string direction) {
     etat = etat.tourner();
     ordre = "tourner" + direction;
+    this.direction = direction;
 }
 
 void Robot::saisir(Objet o) {

@@ -1,7 +1,7 @@
 #include "AVide.h"
 using namespace Robot;
 
-AVide* AVide::INSTANCE = NULL;
+AVide* AVide::INSTANCE = new AVide();
 
 AVide::AVide() {
 	// TODO - implement AVide::AVide
@@ -9,9 +9,6 @@ AVide::AVide() {
 }
 
 AVide* AVide::getInstance() {
-    if (INSTANCE == NULL) {
-        INSTANCE = new AVide;
-    }
     return INSTANCE;
 }
 
