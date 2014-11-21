@@ -15,7 +15,7 @@ namespace Robot {
 	class Figer : public EtatRobot {
 
 	private:
-		int etat;
+		EtatRobot etat;
         
     public:
 		void repartir();

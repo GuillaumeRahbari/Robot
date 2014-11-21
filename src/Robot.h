@@ -47,6 +47,10 @@ namespace Robot {
 		void repartir();
 
 		void afficher();
+
+		EtatRobot getEtat();
+
+		void setEtat(EtatRobot);
 	};
 }
 

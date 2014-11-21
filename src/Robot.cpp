@@ -52,4 +52,12 @@ void Robot::afficher() {
 	// TODO - implement Robot::afficher
 	throw "Not yet implemented";
 }
+
+EtatRobot Robot::getEtat(){
+	return etat;
+}
+
+void Robot::setEtat(EtatRobot e){
+	Robot::etat = e;
+}
 }
