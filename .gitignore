@@ -38,3 +38,8 @@ Robot
 *.xcodeproj*
 /Debug/
 /Release/
+
+#Eclipse
+.project
+.settings/
+.cproject
