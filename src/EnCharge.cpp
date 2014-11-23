@@ -19,9 +19,8 @@ EnCharge* EnCharge::getInstance() {
     return INSTANCE;
 }
 
-void EnCharge::avancer() {
-    // TODO - implement EnCharge::avancer
-    throw "Not yet implemented";
+bool EnCharge::avancer() {
+    return true;
 }
 
 EtatRobot EnCharge::tourner() {

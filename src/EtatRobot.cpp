@@ -18,9 +18,8 @@ void EtatRobot::saisir() {
 	throw "Not yet implemented";
 }
 
-void EtatRobot::avancer() {
-	// TODO - implement EtatRobot::avancer
-	throw "Not yet implemented";
+bool EtatRobot::avancer() {
+	return false;
 }
 
 void EtatRobot::rencontrerPlot() {

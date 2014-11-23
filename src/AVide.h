@@ -21,7 +21,7 @@ class AVide : public EnRoute {
 	public:
 		static AVide* getInstance();
 
-		void avancer();
+		bool avancer();
 
 		EtatRobot tourner();
 

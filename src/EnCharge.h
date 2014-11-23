@@ -22,7 +22,7 @@ class EnCharge : public EnRoute {
     public:
         static EnCharge* getInstance();
         
-        void avancer();
+        bool avancer();
         
         EtatRobot tourner();
         

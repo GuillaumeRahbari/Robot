@@ -1,4 +1,5 @@
 #include "AVide.h"
+#include "Position.h"
 
 AVide* AVide::INSTANCE = new AVide();
 
@@ -11,9 +12,8 @@ AVide* AVide::getInstance() {
     return INSTANCE;
 }
 
-void AVide::avancer() {
-	// TODO - implement AVide::avancer
-	throw "Not yet implemented";
+bool AVide::avancer() {
+	return true;
 }
 
 EtatRobot AVide::tourner() {

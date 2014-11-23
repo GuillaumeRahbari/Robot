@@ -22,7 +22,7 @@ class EtatRobot {
 
 		void saisir();
 
-		void avancer();
+		bool avancer();
 
 		void rencontrerPlot();
 

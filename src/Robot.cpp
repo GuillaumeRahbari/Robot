@@ -2,8 +2,12 @@
 using namespace std;
 
 void Robot::avancer(int x, int y) {
-	// TODO - implement Robot::avancer
-	throw "Not yet implemented";
+	if (etat.avancer()){
+		p.setX(x);
+		p.setY(y);
+	} else {
+		throw "impossible d'avancer";
+	}
 }
 
 void Robot::tourner(string d) {

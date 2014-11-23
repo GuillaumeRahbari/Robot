@@ -15,6 +15,7 @@
 #include "Objet.h"
 #include "Plot.h"
 #include <stddef.h>
+#include "Position.h"
 
 using namespace std;
 
@@ -25,6 +26,7 @@ class Robot {
 		EtatRobot etat;
 		Vue vue;
 		string ordre;
+		Position p;
 
 	public:
 		void avancer(int, int);
