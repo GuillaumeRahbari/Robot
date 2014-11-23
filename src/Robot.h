@@ -11,7 +11,6 @@
 
 #include <string>
 #include "EtatRobot.h"
-#include "Vue.h"
 #include "Objet.h"
 #include "Plot.h"
 #include <stddef.h>
