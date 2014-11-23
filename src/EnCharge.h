@@ -30,7 +30,7 @@ class EnCharge : public EnRoute {
         
         int peser();
         
-        void rencontrerPlot();
+        EtatRobot rencontrerPlot();
         
         void afficher();
 };
