@@ -1,11 +1,12 @@
 #include "Robot.h"
+#include <typeinfo>
 using namespace std;
 
 Robot::Robot(Position pos, string dir, string ordre, Plot plot, Objet obj) :
 etat(*EtatRobot::initialisation()), p(pos), direction(dir), ordre(ordre), plot(plot), ob(obj){}
 
 ostream& operator<< (ostream& flux, Robot const& robot){
-    flux << &robot.etat <<endl;
+    flux << (&robot.etat) <<endl;
     flux << robot.p << endl;
     flux << robot.direction << endl;
     flux << robot.ob << endl;
@@ -59,6 +60,7 @@ int Robot::peser() {
 		return ob.getPoids();
 	} catch (exception e){
 		cout << &e << endl;
+        return -1;
 	}
 }
 
@@ -77,6 +79,7 @@ int Robot::evaluerPlot() {
     	return plot.getHauteur();
     } catch (exception e){
     	cout << &e << endl;
+        return -1;
     }
 }
 
