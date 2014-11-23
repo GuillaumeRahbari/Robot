@@ -1,8 +1,12 @@
 #include "AVide.h"
 
-AVide* AVide::INSTANCE = NULL;
+AVide* AVide::INSTANCE = new AVide();
 
 AVide::AVide() {}
+
+ostream& operator<< (ostream& flux, AVide const& avide){
+    return flux << "Etat : AVide";
+}
 
 AVide* AVide::getInstance() {
     return INSTANCE;

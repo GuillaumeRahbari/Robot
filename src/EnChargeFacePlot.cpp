@@ -13,6 +13,10 @@ EnChargeFacePlot* EnChargeFacePlot::INSTANCE = new EnChargeFacePlot();
 
 EnChargeFacePlot::EnChargeFacePlot(){}
 
+ostream& operator<< (ostream& flux, EnChargeFacePlot const& enchargeFacePlot){
+    return flux << "Etat : EnChargeFacePlot";
+}
+
 EnChargeFacePlot* EnChargeFacePlot::getInstance() {
     return INSTANCE;
 }

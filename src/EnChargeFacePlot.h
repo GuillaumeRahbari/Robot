@@ -20,6 +20,8 @@ class EnChargeFacePlot : public EnRoute {
         EnChargeFacePlot();
         
     public:
+        friend ostream& operator<< (ostream&, EnChargeFacePlot const&);
+    
         static EnChargeFacePlot* getInstance();
         
         void poser();

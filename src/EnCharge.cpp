@@ -12,6 +12,10 @@ EnCharge* EnCharge::INSTANCE = new EnCharge();
 
 EnCharge::EnCharge (){}
 
+ostream& operator<< (ostream& flux, EnCharge const& encharge){
+    return flux << "Etat : EnCharge";
+}
+
 EnCharge* EnCharge::getInstance() {
     return INSTANCE;
 }

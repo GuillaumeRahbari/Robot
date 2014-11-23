@@ -20,6 +20,8 @@ class EnCharge : public EnRoute {
         EnCharge();
         
     public:
+        friend ostream& operator<< (ostream&, EnCharge const&);
+    
         static EnCharge* getInstance();
         
         bool avancer();

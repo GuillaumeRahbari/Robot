@@ -5,6 +5,10 @@ AVideFacePlot* AVideFacePlot::INSTANCE = new AVideFacePlot();
 
 AVideFacePlot::AVideFacePlot() {}
 
+ostream& operator<< (ostream& flux, AVideFacePlot const& avideFacePlot){
+    return flux << "Etat : AVideFacePlot";
+}
+
 AVideFacePlot* AVideFacePlot::getInstance() {
 	return INSTANCE;
 }

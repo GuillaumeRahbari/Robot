@@ -19,6 +19,8 @@ class AVideFacePlot : public EnRoute {
 		AVideFacePlot();
 
 	public:
+        friend ostream& operator<< (ostream&, AVideFacePlot const&);
+    
 		static AVideFacePlot* getInstance();
 
 		int evaluerPlot();

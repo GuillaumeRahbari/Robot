@@ -19,6 +19,8 @@ class AVide : public EnRoute {
 		AVide();
 
 	public:
+        friend ostream& operator<< (ostream&, AVide const&);
+    
 		static AVide* getInstance();
 
 		bool avancer();
