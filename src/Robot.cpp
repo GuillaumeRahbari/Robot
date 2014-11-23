@@ -25,10 +25,14 @@ void Robot::avancer(int x, int y) {
 }
 
 void Robot::tourner(string d) {
-    etat = etat.tourner();
-    ordre = "tourner " + d;
-    direction = d;
-    plot = NULL;
+	try{
+		etat = etat.tourner();
+		ordre = "tourner " + d;
+		direction = d;
+		plot = NULL;
+	} catch (exception e){
+		cout << &e << endl;
+	}
 }
 
 void Robot::saisir(Objet o) {
