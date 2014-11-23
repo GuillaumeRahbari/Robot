@@ -20,8 +20,7 @@ EnCharge* EnCharge::getInstance() {
     return INSTANCE;
 }
 
-bool EnCharge::avancer() {
-    return true;
+void EnCharge::avancer() {
 }
 
 EtatRobot EnCharge::tourner() {

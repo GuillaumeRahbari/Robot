@@ -12,15 +12,14 @@ AVide* AVide::getInstance() {
     return INSTANCE;
 }
 
-bool AVide::avancer() {
-	return true;
+void AVide::avancer() {
 }
 
 EtatRobot AVide::tourner() {
     return *getInstance();
 }
 
-EtatRobot AVide::rencontrerPlot() {
+EtatRobot AVide::rencontrerPlot(Plot p) {
 	return AVideFacePlot::*getInstance();
 }
 

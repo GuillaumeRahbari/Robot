@@ -2,11 +2,12 @@
 using namespace std;
 
 void Robot::avancer(int x, int y) {
-	if (etat.avancer()){
+	try{
+		etat.avancer();
 		p.setX(x);
 		p.setY(y);
-	} else {
-		throw "impossible d'avancer";
+	} catch (exception &e){
+		cout << e << endl;
 	}
 }
 
@@ -14,6 +15,7 @@ void Robot::tourner(string d) {
     etat = etat.tourner();
     ordre = "tourner" + d;
     direction = d;
+    plot = NULL;
 }
 
 void Robot::saisir(Objet o) {
@@ -32,13 +34,12 @@ int Robot::peser() {
 }
 
 void Robot::rencontrerPlot(Plot p) {
-	etat = etat.rencontrerPlot();
+	etat = etat.rencontrerPlot(p);
 	plot = p;
 }
 
 int Robot::evaluerPlot() {
-	// TODO - implement Robot::evaluerPlot
-	throw "Not yet implemented";
+	return etat.evaluerPlot();
 }
 
 void Robot::figer() {

@@ -28,9 +28,9 @@ class EtatRobot {
 
 		void saisir();
 
-		bool avancer();
+		void avancer();
 
-		EtatRobot rencontrerPlot();
+		EtatRobot rencontrerPlot(Plot);
 
 		int evaluerPlot();
 

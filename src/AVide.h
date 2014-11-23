@@ -23,11 +23,11 @@ class AVide : public EnRoute {
     
 		static AVide* getInstance();
 
-		bool avancer();
+		void avancer();
 
 		EtatRobot tourner();
 
-		EtatRobot rencontrerPlot();
+		EtatRobot rencontrerPlot(Plot);
 
 		void afficher();
 };
