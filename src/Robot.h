@@ -27,6 +27,8 @@ class Robot {
 		Vue vue;
 		string ordre;
 		Position p;
+		Plot plot;
+		Objet ob;
 
 	public:
 		void avancer(int, int);

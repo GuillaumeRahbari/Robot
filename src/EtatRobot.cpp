@@ -22,9 +22,8 @@ bool EtatRobot::avancer() {
 	return false;
 }
 
-void EtatRobot::rencontrerPlot() {
-	// TODO - implement EtatRobot::rencontrerPlot
-	throw "Not yet implemented";
+EtatRobot EtatRobot::rencontrerPlot() {
+	throw "Vous êtes déjà face a un plot";
 }
 
 int EtatRobot::evaluerPlot() {

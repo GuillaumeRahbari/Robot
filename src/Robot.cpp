@@ -32,8 +32,8 @@ int Robot::peser() {
 }
 
 void Robot::rencontrerPlot(Plot p) {
-	// TODO - implement Robot::rencontrerPlot
-	throw "Not yet implemented";
+	etat = etat.rencontrerPlot();
+	plot = p;
 }
 
 int Robot::evaluerPlot() {
