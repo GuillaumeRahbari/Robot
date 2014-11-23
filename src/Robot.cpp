@@ -1,12 +1,12 @@
 #include "Robot.h"
-#include <typeinfo>
+#include "AVide.h"
 using namespace std;
 
 Robot::Robot(Position pos, string dir, string ordre, Plot plot, Objet obj) :
 etat(*EtatRobot::initialisation()), p(pos), direction(dir), ordre(ordre), plot(plot), ob(obj){}
 
 ostream& operator<< (ostream& flux, Robot const& robot){
-    flux << (&robot.etat) <<endl;
+    robot.etat.ecritNom(flux) <<endl;
     flux << robot.p << endl;
     flux << robot.direction << endl;
     flux << robot.ob << endl;
