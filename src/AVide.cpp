@@ -1,12 +1,8 @@
 #include "AVide.h"
-#include "Position.h"
 
-AVide* AVide::INSTANCE = new AVide();
+AVide* AVide::INSTANCE = NULL;
 
-AVide::AVide() {
-	// TODO - implement AVide::AVide
-	throw "Not yet implemented";
-}
+AVide::AVide() {}
 
 AVide* AVide::getInstance() {
     return INSTANCE;

@@ -10,10 +10,7 @@
 
 EnCharge* EnCharge::INSTANCE = new EnCharge();
 
-EnCharge::EnCharge() {
-    // TODO - implement EnCharge::EnCharge
-    throw "Not yet implemented";
-}
+EnCharge::EnCharge (){}
 
 EnCharge* EnCharge::getInstance() {
     return INSTANCE;

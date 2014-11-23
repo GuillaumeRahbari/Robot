@@ -11,10 +11,7 @@
 
 EnChargeFacePlot* EnChargeFacePlot::INSTANCE = new EnChargeFacePlot();
 
-EnChargeFacePlot::EnChargeFacePlot() {
-    // TODO - implement EnChargeFacePlot::EnChargeFacePlot
-    throw "Not yet implemented";
-}
+EnChargeFacePlot::EnChargeFacePlot(){}
 
 EnChargeFacePlot* EnChargeFacePlot::getInstance() {
     return INSTANCE;

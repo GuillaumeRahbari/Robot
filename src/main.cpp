@@ -12,9 +12,6 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    //Robot::Plot p1(5);
-    Plot p2;
-    //std::cout << p1;
-    cout << p2;
+    cout << "Hello World !";
     return 0;
 }

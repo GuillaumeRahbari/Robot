@@ -3,10 +3,7 @@
 
 AVideFacePlot* AVideFacePlot::INSTANCE = new AVideFacePlot();
 
-AVideFacePlot::AVideFacePlot() {
-	// TODO - implement AVideFacePlot::AVideFacePlot
-	throw "Not yet implemented";
-}
+AVideFacePlot::AVideFacePlot() {}
 
 AVideFacePlot* AVideFacePlot::getInstance() {
 	return INSTANCE;
