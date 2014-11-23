@@ -43,3 +43,6 @@ Robot
 .project
 .settings/
 .cproject
+
+#Code::Blocks
+Robot.cbp
