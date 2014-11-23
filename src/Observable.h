@@ -10,13 +10,13 @@
 #define Robot_Vue_h
 
 #include "Observateur.h"
-#include <set>
+#include <vector>
 
 using namespace std;
 
 class Observable {
 	private:
-		set<Observateur> liste;
+		vector<Observateur> liste;
 
 	public:
 		void notifier();

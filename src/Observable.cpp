@@ -1,21 +1,21 @@
 #include "Observable.h"
 #include <iostream>
+#include "Observateur.h"
 
 void Observable::notifier() {
-	set<Observable>::iterator it = this->liste.begin();
-	for (it ; it != this->operateurs.end() ; it ++){
-		it -> afficher();
+	for (int i = 0; i<liste.end(); i++){
+		liste[i].afficher();
 	}
 }
 
 void Observable::attacherAfficheur(Observateur ob) {
-	liste.insert(ob);
+	liste.push_back(ob);
 }
 
 void Observable::detacherAfficheur(Observateur ob) {
-	if (this->liste.find(ob) != liste.end()){
-		this->liste.erase(ob);
-	} else {
-		cout << "Cet observateur n'est pas dans la liste" << endl;
+	for (int i = 0; i < liste.end(); i++){
+		if (liste[i] == ob){
+			liste.erase(liste.begin()+i);
+		}
 	}
 }
