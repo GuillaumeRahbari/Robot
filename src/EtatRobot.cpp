@@ -2,15 +2,15 @@
 #include "AVide.h"
 
 EtatRobot EtatRobot::figer(EtatRobot e) {
-	throw "Vous ne pouvez pas vous figer si vous l'êtes déjà";
+	throw "Vous ne pouvez pas vous figer si vous l'etes deja�";
 }
 
 EtatRobot EtatRobot::repartir() {
-	throw "Vous ne pouvez pas repartir si vous n'êtes pas figé";
+	throw "Vous ne pouvez pas repartir si vous n'etes pas fige";
 }
 
 EtatRobot EtatRobot::tourner() {
-    throw "Vous ne pouvez pas vous déplacer quand vous êtes figé";
+    throw "Vous ne pouvez pas vous deplacer quand vous etes fige";
 }
 
 void EtatRobot::saisir() {
@@ -27,8 +27,7 @@ EtatRobot EtatRobot::rencontrerPlot() {
 }
 
 int EtatRobot::evaluerPlot() {
-	// TODO - implement EtatRobot::evaluerPlot
-	throw "Not yet implemented";
+	throw "Impossible d'evaluer un plot dans cet etat";
 }
 
 void EtatRobot::peser() {

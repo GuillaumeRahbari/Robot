@@ -14,8 +14,6 @@ AVideFacePlot* AVideFacePlot::getInstance() {
 }
 
 int AVideFacePlot::evaluerPlot() {
-	// TODO - implement AVideFacePlot::evaluerPlot
-	throw "Not yet implemented";
 }
 
 EtatRobot AVideFacePlot::tourner() {
