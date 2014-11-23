@@ -9,13 +9,21 @@
 #ifndef Robot_Objet_h
 #define Robot_Objet_h
 
+#include <iostream>
+
+using namespace std;
+
 class Objet {
 
 	private:
 		int poids;
 
 	public:
-		int getPoids();
+        Objet(int poids = 0);
+    
+        friend ostream& operator<< (ostream&, Objet const&);
+    
+		int getPoids() const;
 };
 
 #endif

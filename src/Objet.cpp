@@ -1,5 +1,20 @@
-#include "Objet.h"
+//
+//  Objet.cpp
+//  Robot
+//
 
-int Objet::getPoids() {
+#include "Objet.h"
+#include <iostream>
+
+using namespace std;
+
+Objet::Objet (int poids) : poids(poids){}
+
+ostream& operator<< (ostream& flux, Objet const& objet){
+    flux << "La poids est : " << objet.getPoids();
+    return flux;
+}
+
+int Objet::getPoids() const{
 	return this->poids;
 }
