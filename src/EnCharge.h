@@ -18,7 +18,7 @@ class EnCharge : public EnRoute {
         static EnCharge* INSTANCE;
         
         EnCharge();
-        
+    
     public:
         friend ostream& operator<< (ostream&, EnCharge const&);
     

@@ -15,7 +15,7 @@ class Figer : public EtatRobot {
 
 	private:
 		EtatRobot etat;
-        
+    
     public:
 		Figer(EtatRobot);
 

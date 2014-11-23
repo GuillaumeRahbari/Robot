@@ -18,7 +18,7 @@ class EnChargeFacePlot : public EnRoute {
         static EnChargeFacePlot* INSTANCE;
         
         EnChargeFacePlot();
-        
+    
     public:
         friend ostream& operator<< (ostream&, EnChargeFacePlot const&);
     
