@@ -16,15 +16,16 @@
 #include "Plot.h"
 #include <stddef.h>
 #include "Position.h"
+#include "Observable.h"
 
 using namespace std;
 
-class Robot {
+class Robot : public Observable{
 
 	private:
 		string direction;
 		EtatRobot etat;
-		Vue vue;
+		Observable vue;
 		string ordre;
 		Position p;
 		Plot plot;

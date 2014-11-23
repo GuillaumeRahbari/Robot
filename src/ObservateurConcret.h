@@ -9,9 +9,9 @@
 #ifndef Robot_Afficheur_1_h
 #define Robot_Afficheur_1_h
 
-#include "Afficheur.h"
+#include "Observateur.h"
 
-class Afficheur_1 : public Afficheur {
+class ObservateurConcret : public Observateur {
 
 
 public:

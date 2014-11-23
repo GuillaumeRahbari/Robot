@@ -9,7 +9,7 @@
 #ifndef Robot_Afficheur_h
 #define Robot_Afficheur_h
 
-class Afficheur {
+class Observateur {
 
 
 public:

@@ -1,6 +1,6 @@
-#include "Afficheur.h"
+#include "Observateur.h"
 
-void Afficheur::afficher() {
+void Observateur::afficher() {
 	// TODO - implement Afficheur::afficher
 	throw "Not yet implemented";
 }
