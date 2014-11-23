@@ -18,8 +18,8 @@ void EtatRobot::saisir() {
 	throw "Not yet implemented";
 }
 
-bool EtatRobot::avancer() {
-	return false;
+void EtatRobot::avancer() {
+	throw "Il est impossible d'avancer dans cet etat.";
 }
 
 EtatRobot EtatRobot::rencontrerPlot() {

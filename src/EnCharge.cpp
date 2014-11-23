@@ -20,8 +20,7 @@ EnCharge* EnCharge::getInstance() {
     return INSTANCE;
 }
 
-bool EnCharge::avancer() {
-    return true;
+void EnCharge::avancer() {
 }
 
 EtatRobot EnCharge::tourner() {
@@ -33,9 +32,8 @@ int EnCharge::peser() {
     throw "Not yet implemented";
 }
 
-void EnCharge::rencontrerPlot() {
-    // TODO - implement EnCharge::rencontrerPlot
-    throw "Not yet implemented";
+EtatRobot EnCharge::rencontrerPlot() {
+    return EnChargeFacePlot::*getInstance();
 }
 
 void EnCharge::afficher() {

@@ -12,17 +12,15 @@ AVide* AVide::getInstance() {
     return INSTANCE;
 }
 
-bool AVide::avancer() {
-	return true;
+void AVide::avancer() {
 }
 
 EtatRobot AVide::tourner() {
     return *getInstance();
 }
 
-void AVide::rencontrerPlot() {
-	// TODO - implement AVide::rencontrerPlot
-	throw "Not yet implemented";
+EtatRobot AVide::rencontrerPlot(Plot p) {
+	return AVideFacePlot::*getInstance();
 }
 
 void AVide::afficher() {
