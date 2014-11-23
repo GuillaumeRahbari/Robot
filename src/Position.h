@@ -9,6 +9,10 @@
 #ifndef Robot_Position_h
 #define Robot_Position_h
 
+#include <iostream>
+
+using namespace std;
+
 class Position {
 
 	private:
@@ -16,11 +20,15 @@ class Position {
 		int y;
 
 	public:
-		int getX();
+        Position(int x = 0, int y = 0);
+    
+        friend ostream& operator<< (ostream&, Position const&);
+    
+		int getX() const;
 
 		void setX(int x);
 
-		int getY();
+		int getY() const;
 
 		void setY(int y);
 };

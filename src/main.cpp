@@ -8,12 +8,14 @@
 
 #include <iostream>
 #include "Plot.h"
+#include "Position.h"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    cout << "Hello World !";
     Plot p(5);
     cout << p << endl;
+    Position pos(3,2);
+    cout << pos << endl;
     return 0;
 }
