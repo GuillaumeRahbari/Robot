@@ -11,13 +11,11 @@
 
 #include "EtatRobot.h"
 
-namespace Robot {
-	class EnRoute : public EtatRobot {
+class EnRoute : public EtatRobot {
 
 
 	public:
 		EtatRobot figer();
-	};
-}
+};
 
 #endif

@@ -1,5 +1,4 @@
 #include "AVide.h"
-using namespace Robot;
 
 AVide* AVide::INSTANCE = new AVide();
 

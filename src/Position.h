@@ -9,8 +9,7 @@
 #ifndef Robot_Position_h
 #define Robot_Position_h
 
-namespace Robot {
-	class Position {
+class Position {
 
 	private:
 		int x;
@@ -24,7 +23,6 @@ namespace Robot {
 		int getY();
 
 		void setY(int y);
-	};
-}
+};
 
 #endif

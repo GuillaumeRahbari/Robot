@@ -12,8 +12,7 @@
 #include <stdio.h>
 #include "EnRoute.h"
 
-namespace Robot {
-    class EnCharge : public EnRoute {
+class EnCharge : public EnRoute {
         
     private:
         static EnCharge* INSTANCE;
@@ -32,8 +31,7 @@ namespace Robot {
         void rencontrerPlot();
         
         void afficher();
-    };
-}
+};
 
 #endif /* defined(__Robot__EnCharge__) */
 

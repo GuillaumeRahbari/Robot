@@ -1,6 +1,5 @@
 #include "AVideFacePlot.h"
 #include "AVide.h"
-using namespace Robot;
 
 AVideFacePlot* AVideFacePlot::INSTANCE = new AVideFacePlot();
 

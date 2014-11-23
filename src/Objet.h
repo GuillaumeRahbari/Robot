@@ -9,15 +9,13 @@
 #ifndef Robot_Objet_h
 #define Robot_Objet_h
 
-namespace Robot {
-	class Objet {
+class Objet {
 
 	private:
 		int poids;
 
 	public:
 		int getPoids();
-	};
-}
+};
 
 #endif

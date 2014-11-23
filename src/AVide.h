@@ -11,8 +11,7 @@
 
 #include "EnRoute.h"
 
-namespace Robot {
-	class AVide : public EnRoute {
+class AVide : public EnRoute {
 
 	private:
 		static AVide* INSTANCE;
@@ -29,7 +28,6 @@ namespace Robot {
 		void rencontrerPlot();
 
 		void afficher();
-	};
-}
+};
 
 #endif

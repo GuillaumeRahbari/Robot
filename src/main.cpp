@@ -7,9 +7,14 @@
 //
 
 #include <iostream>
+#include "Plot.h"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    //Robot::Plot p1(5);
+    Plot p2;
+    //std::cout << p1;
+    cout << p2;
     return 0;
 }

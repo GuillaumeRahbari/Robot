@@ -1,5 +1,4 @@
 #include "Position.h"
-using namespace Robot;
 
 int Position::getX() {
 	return this->x;

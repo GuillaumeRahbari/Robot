@@ -12,8 +12,7 @@
 #include <stdio.h>
 #include "EnRoute.h"
 
-namespace Robot {
-    class EnChargeFacePlot : public EnRoute {
+class EnChargeFacePlot : public EnRoute {
         
     private:
         static EnChargeFacePlot* INSTANCE;
@@ -30,7 +29,6 @@ namespace Robot {
         EtatRobot tourner();
         
         void afficher();
-    };
-}
+};
 
 #endif /* defined(__Robot__EnChargeFacePlot__) */

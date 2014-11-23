@@ -11,8 +11,7 @@
 
 #include <stddef.h>
 
-namespace Robot {
-	class EtatRobot {
+class EtatRobot {
         
 	public:
 		void figer();
@@ -36,7 +35,6 @@ namespace Robot {
 		void afficher();
 
 		static EtatRobot* initialisation();
-	};
-}
+};
 
 #endif

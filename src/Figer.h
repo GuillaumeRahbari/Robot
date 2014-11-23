@@ -11,8 +11,7 @@
 
 #include "EtatRobot.h"
 
-namespace Robot {
-	class Figer : public EtatRobot {
+class Figer : public EtatRobot {
 
 	private:
 		EtatRobot etat;
@@ -23,7 +22,6 @@ namespace Robot {
 		EtatRobot repartir();
 
 		void afficher();
-	};
-}
+};
 
 #endif

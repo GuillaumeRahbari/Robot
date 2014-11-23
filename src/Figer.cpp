@@ -1,5 +1,4 @@
 #include "Figer.h"
-using namespace Robot;
 
 Figer::Figer(EtatRobot e){
 	etat = e;

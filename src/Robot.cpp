@@ -1,7 +1,6 @@
 #include "Robot.h"
 using namespace std;
 
-namespace Robot {
 void Robot::avancer(int x, int y) {
 	// TODO - implement Robot::avancer
 	throw "Not yet implemented";
@@ -57,5 +56,4 @@ EtatRobot Robot::getEtat(){
 
 void Robot::setEtat(EtatRobot e){
 	etat = e;
-}
 }

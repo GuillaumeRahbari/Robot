@@ -9,15 +9,21 @@
 #ifndef Robot_Plot_h
 #define Robot_Plot_h
 
-namespace Robot {
-	class Plot {
+#include <iostream>
+
+using namespace std;
+
+class Plot {
 
 	private:
 		int hauteur;
 
 	public:
-		int getHauteur();
-	};
-}
+        Plot(int hauteur = 0);
+        
+        friend ostream& operator<< (ostream& flux, Plot const& plot);
+        
+		int getHauteur() const;
+};
 
 #endif

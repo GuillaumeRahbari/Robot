@@ -1,12 +1,12 @@
 #include "EtatRobot.h"
-using namespace Robot;
+#include "AVide.h"
 
 void EtatRobot::figer() {
-	throw "Vous ne pouvez pas vous figer si vous l'êtes déjà";
+	throw "Vous ne pouvez pas vous figer si vous l'Ãªtes dÃ©jÃ ";
 }
 
 EtatRobot EtatRobot::repartir() {
-	throw "Vous ne pouvez pas repartir si vous n'êtes pas figé";
+	throw "Vous ne pouvez pas repartir si vous n'Ãªtes pas figÃ©";
 }
 
 EtatRobot EtatRobot::tourner() {

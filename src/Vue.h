@@ -11,7 +11,6 @@
 
 class Vue {
 
-
 public:
 	void notifier();
 

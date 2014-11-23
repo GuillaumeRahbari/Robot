@@ -7,7 +7,6 @@
 //
 
 #include "EnCharge.h"
-using namespace Robot;
 
 EnCharge* EnCharge::INSTANCE = new EnCharge();
 

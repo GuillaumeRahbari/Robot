@@ -18,8 +18,7 @@
 
 using namespace std;
 
-namespace Robot {
-	class Robot {
+class Robot {
 
 	private:
 		string direction;
@@ -51,7 +50,6 @@ namespace Robot {
 		EtatRobot getEtat();
 
 		void setEtat(EtatRobot);
-	};
-}
+};
 
 #endif

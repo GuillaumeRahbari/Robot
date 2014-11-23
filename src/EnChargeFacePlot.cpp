@@ -8,7 +8,6 @@
 
 #include "EnChargeFacePlot.h"
 #include "EnCharge.h"
-using namespace Robot;
 
 EnChargeFacePlot* EnChargeFacePlot::INSTANCE = new EnChargeFacePlot();
 
