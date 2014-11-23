@@ -15,7 +15,7 @@ class EnRoute : public EtatRobot {
 
 
 	public:
-		EtatRobot figer();
+		EtatRobot figer(EtatRobot);
 };
 
 #endif

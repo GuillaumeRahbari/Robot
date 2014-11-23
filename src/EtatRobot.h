@@ -12,9 +12,9 @@
 #include <stddef.h>
 
 class EtatRobot {
-        
+
 	public:
-		void figer();
+		EtatRobot figer(EtatRobot);
 
 		EtatRobot repartir();
 

@@ -38,7 +38,7 @@ int Robot::evaluerPlot() {
 }
 
 void Robot::figer() {
-	etat = Figer(etat.figer());
+	etat = etat.figer(etat);
 }
 
 void Robot::repartir() {

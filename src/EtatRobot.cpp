@@ -1,7 +1,7 @@
 #include "EtatRobot.h"
 #include "AVide.h"
 
-void EtatRobot::figer() {
+EtatRobot EtatRobot::figer(EtatRobot e) {
 	throw "Vous ne pouvez pas vous figer si vous l'êtes déjà";
 }
 
