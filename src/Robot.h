@@ -28,9 +28,9 @@ namespace Robot {
 		string ordre;
 
 	public:
-		void avancer(int x, int y);
+		void avancer(int, int);
 
-		void tourner(string direction);
+		void tourner(string);
 
 		void saisir(Objet o);
 

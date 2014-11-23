@@ -7,10 +7,10 @@ void Robot::avancer(int x, int y) {
 	throw "Not yet implemented";
 }
 
-void Robot::tourner(string direction) {
+void Robot::tourner(string d) {
     etat = etat.tourner();
-    ordre = "tourner" + direction;
-    this.direction = direction;
+    ordre = "tourner" + d;
+    direction = d;
 }
 
 void Robot::saisir(Objet o) {
