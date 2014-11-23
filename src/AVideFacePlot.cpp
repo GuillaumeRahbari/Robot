@@ -1,4 +1,5 @@
 #include "AVideFacePlot.h"
+#include "AVide.h"
 using namespace Robot;
 
 AVideFacePlot* AVideFacePlot::INSTANCE = new AVideFacePlot();
@@ -18,7 +19,7 @@ int AVideFacePlot::evaluerPlot() {
 }
 
 EtatRobot AVideFacePlot::tourner() {
-	return AVide::getInstance();
+    return *AVide::getInstance();
 }
 
 void AVideFacePlot::saisir() {

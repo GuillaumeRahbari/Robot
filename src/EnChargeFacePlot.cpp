@@ -7,6 +7,7 @@
 //
 
 #include "EnChargeFacePlot.h"
+#include "EnCharge.h"
 using namespace Robot;
 
 EnChargeFacePlot* EnChargeFacePlot::INSTANCE = new EnChargeFacePlot();
@@ -31,7 +32,7 @@ int EnChargeFacePlot::peser() {
 }
 
 EtatRobot EnChargeFacePlot::tourner() {
-    return EnCharge::getInstance();
+    return *EnCharge::getInstance();
 }
 
 void EnChargeFacePlot::afficher() {
