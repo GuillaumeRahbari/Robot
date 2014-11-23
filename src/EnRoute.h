@@ -16,6 +16,10 @@ class EnRoute : public EtatRobot {
 
 	public:
 		EtatRobot figer(EtatRobot);
+    
+    virtual void ecritNom(ostream& os) const{
+        os << "mère2";
+    }
 };
 
 #endif

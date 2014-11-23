@@ -22,6 +22,10 @@ class EnChargeFacePlot : public EnRoute {
     public:
         friend ostream& operator<< (ostream&, EnChargeFacePlot const&);
     
+    virtual void ecritNom(ostream& os) const{
+        os << "fille";
+    }
+    
         static EnChargeFacePlot* getInstance();
         
         EtatRobot poser();

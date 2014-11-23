@@ -1,7 +1,7 @@
 #include "Observable.h"
 #include <iostream>
 
-void Observable::notifier() {
+/*void Observable::notifier() {
 	set<Observable>::iterator it = this->liste.begin();
 	for (it ; it != this->operateurs.end() ; it ++){
 		it -> afficher();
@@ -18,4 +18,4 @@ void Observable::detacherAfficheur(Observateur ob) {
 	} else {
 		cout << "Cet observateur n'est pas dans la liste" << endl;
 	}
-}
+}*/
