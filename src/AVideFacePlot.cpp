@@ -13,7 +13,7 @@ AVideFacePlot* AVideFacePlot::getInstance() {
 	return INSTANCE;
 }
 
-int AVideFacePlot::evaluerPlot() {
+void AVideFacePlot::evaluerPlot() {
 }
 
 EtatRobot AVideFacePlot::tourner() {

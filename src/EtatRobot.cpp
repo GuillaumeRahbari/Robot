@@ -26,7 +26,7 @@ EtatRobot EtatRobot::rencontrerPlot() {
 	throw "Vous etes deja face a un plot";
 }
 
-int EtatRobot::evaluerPlot() {
+void EtatRobot::evaluerPlot() {
 	throw "Impossible d'evaluer un plot dans cet etat";
 }
 
@@ -45,6 +45,6 @@ void EtatRobot::afficher() {
 	throw "Not yet implemented";
 }
 
-static EtatRobot* initialisation(){
+EtatRobot* EtatRobot::initialisation(){
 	return AVide::getInstance();
 }

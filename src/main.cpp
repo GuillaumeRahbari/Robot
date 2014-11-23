@@ -10,6 +10,7 @@
 #include "Plot.h"
 #include "Position.h"
 #include "Objet.h"
+#include "Robot.h"
 
 using namespace std;
 
@@ -20,5 +21,7 @@ int main(int argc, const char * argv[]) {
     cout << pos << endl;
     Objet obj(5);
     cout << obj << endl;
+    Robot r;
+    cout << r;
     return 0;
 }

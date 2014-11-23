@@ -1,4 +1,5 @@
 #include "AVide.h"
+#include "AVideFacePlot.h"
 
 AVide* AVide::INSTANCE = new AVide();
 
@@ -20,7 +21,7 @@ EtatRobot AVide::tourner() {
 }
 
 EtatRobot AVide::rencontrerPlot() {
-	return AVideFacePlot::*getInstance();
+	return *AVideFacePlot::getInstance();
 }
 
 void AVide::afficher() {

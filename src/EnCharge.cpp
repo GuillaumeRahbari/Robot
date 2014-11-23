@@ -7,6 +7,7 @@
 //
 
 #include "EnCharge.h"
+#include "EnChargeFacePlot.h"
 
 EnCharge* EnCharge::INSTANCE = new EnCharge();
 
@@ -33,7 +34,7 @@ int EnCharge::peser() {
 }
 
 EtatRobot EnCharge::rencontrerPlot() {
-    return EnChargeFacePlot::*getInstance();
+    return *EnChargeFacePlot::getInstance();
 }
 
 void EnCharge::afficher() {

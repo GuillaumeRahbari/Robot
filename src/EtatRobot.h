@@ -18,7 +18,7 @@ class EtatRobot {
 
 	public:
     
-        friend ostream& operator<< (ostream&, EtatRobot const&);
+        //friend ostream& operator<< (ostream&, EtatRobot const&);
     
 		EtatRobot figer(EtatRobot);
 
@@ -32,7 +32,7 @@ class EtatRobot {
 
 		EtatRobot rencontrerPlot();
 
-		int evaluerPlot();
+		void evaluerPlot();
 
 		void peser();
 

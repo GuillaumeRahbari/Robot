@@ -23,7 +23,7 @@ class AVideFacePlot : public EnRoute {
     
 		static AVideFacePlot* getInstance();
 
-		int evaluerPlot();
+		void evaluerPlot();
 
 		EtatRobot tourner();
 
