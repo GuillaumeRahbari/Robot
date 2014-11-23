@@ -16,6 +16,7 @@
 #include <stddef.h>
 #include "Position.h"
 #include "Observable.h"
+#include "Observable.h"
 
 using namespace std;
 
@@ -34,6 +35,10 @@ class Robot : public Observable{
         Robot(Position pos = Position(), string dir = "N", string ordre = "", Plot plot = Plot(), Objet obj = Objet());
     
         friend ostream& operator<< (ostream&, Robot const&);
+    
+    virtual void ecritNom(ostream& os) const{
+        os << "mère";
+    }
     
 		void avancer(int, int);
 

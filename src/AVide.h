@@ -21,6 +21,10 @@ class AVide : public EnRoute {
 	public:
         friend ostream& operator<< (ostream&, AVide const&);
     
+    virtual void ecritNom(ostream& os) const{
+        os << "fille";
+    };
+    
 		static AVide* getInstance();
 
 		void avancer();

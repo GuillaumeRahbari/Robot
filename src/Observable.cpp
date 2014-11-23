@@ -1,4 +1,5 @@
 #include "Observable.h"
+#include <iostream>
 
 void Observable::notifier() {
 	set<Observable>::iterator it = this->liste.begin();
@@ -12,8 +13,8 @@ void Observable::attacherAfficheur(Observateur ob) {
 }
 
 void Observable::detacherAfficheur(Observateur ob) {
-	if (liste.find(ob) != liste.end()){
-		liste.erase(ob);
+	if (this->liste.find(ob) != liste.end()){
+		this->liste.erase(ob);
 	} else {
 		cout << "Cet observateur n'est pas dans la liste" << endl;
 	}
