@@ -26,7 +26,7 @@ void Robot::avancer(int x, int y) {
 
 void Robot::tourner(string d) {
     etat = etat.tourner();
-    ordre = "tourner" + d;
+    ordre = "tourner " + d;
     direction = d;
     plot = NULL;
 }
@@ -56,11 +56,20 @@ void Robot::rencontrerPlot(Plot p) {
 }
 
 int Robot::evaluerPlot() {
-    return 0;
+    try{
+    	etat.evaluerPlot();
+    	return plot.getHauteur();
+    } catch (exception e){
+    	cout << &e << endl;
+    }
 }
 
 void Robot::figer() {
-	etat = etat.figer(etat);
+	try{
+		etat = etat.figer(etat);
+	} catch (exception e){
+		cout << &e << endl;
+	}
 }
 
 void Robot::repartir() {
