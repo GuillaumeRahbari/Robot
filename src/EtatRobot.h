@@ -30,7 +30,7 @@ class EtatRobot {
 
 		void avancer();
 
-		EtatRobot rencontrerPlot(Plot);
+		EtatRobot rencontrerPlot();
 
 		int evaluerPlot();
 

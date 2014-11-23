@@ -19,7 +19,7 @@ EtatRobot AVide::tourner() {
     return *getInstance();
 }
 
-EtatRobot AVide::rencontrerPlot(Plot p) {
+EtatRobot AVide::rencontrerPlot() {
 	return AVideFacePlot::*getInstance();
 }
 

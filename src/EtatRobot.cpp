@@ -23,7 +23,7 @@ void EtatRobot::avancer() {
 }
 
 EtatRobot EtatRobot::rencontrerPlot() {
-	throw "Vous êtes déjà face a un plot";
+	throw "Vous etes deja face a un plot";
 }
 
 int EtatRobot::evaluerPlot() {

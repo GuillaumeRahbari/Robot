@@ -34,8 +34,12 @@ int Robot::peser() {
 }
 
 void Robot::rencontrerPlot(Plot p) {
-	etat = etat.rencontrerPlot(p);
-	plot = p;
+	try{
+		etat = etat.rencontrerPlot();
+		plot = p;
+	} catch (exception &e){
+		cout << e << endl;
+	}
 }
 
 int Robot::evaluerPlot() {
