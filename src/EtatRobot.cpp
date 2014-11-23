@@ -33,9 +33,8 @@ void EtatRobot::peser() {
 	throw "Vous ne pouvez rien peser si vous n'avez pas d'objet";
 }
 
-void EtatRobot::poser() {
-	// TODO - implement EtatRobot::poser
-	throw "Not yet implemented";
+EtatRobot EtatRobot::poser() {
+	throw "Vous n'avez rien a deposer";
 }
 
 void EtatRobot::afficher() {

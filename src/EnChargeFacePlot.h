@@ -24,7 +24,7 @@ class EnChargeFacePlot : public EnRoute {
     
         static EnChargeFacePlot* getInstance();
         
-        void poser();
+        EtatRobot poser();
         
         void peser();
         

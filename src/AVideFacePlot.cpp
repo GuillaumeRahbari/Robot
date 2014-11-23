@@ -1,5 +1,6 @@
 #include "AVideFacePlot.h"
 #include "AVide.h"
+#include "EnChargeFacePlot.h"
 
 AVideFacePlot* AVideFacePlot::INSTANCE = new AVideFacePlot();
 

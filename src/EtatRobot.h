@@ -36,7 +36,7 @@ class EtatRobot {
 
 		void peser();
 
-		void poser();
+		EtatRobot poser();
 
 		void afficher();
 

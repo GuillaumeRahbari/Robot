@@ -45,7 +45,12 @@ void Robot::saisir(Objet o) {
 }
 
 void Robot::poser() {
-	throw "Not yet implemented";
+	try{
+		etat = etat.poser();
+		ob = NULL;
+	} catch (exception e){
+		cout << &e << endl;
+	}
 }
 
 int Robot::peser() {

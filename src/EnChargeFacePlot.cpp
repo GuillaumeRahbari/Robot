@@ -8,6 +8,7 @@
 
 #include "EnChargeFacePlot.h"
 #include "EnCharge.h"
+#include "AVideFacePlot.h"
 
 EnChargeFacePlot* EnChargeFacePlot::INSTANCE = new EnChargeFacePlot();
 
@@ -21,9 +22,8 @@ EnChargeFacePlot* EnChargeFacePlot::getInstance() {
     return INSTANCE;
 }
 
-void EnChargeFacePlot::poser() {
-    // TODO - implement EnChargeFacePlot::poser
-    throw "Not yet implemented";
+EtatRobot EnChargeFacePlot::poser() {
+    return *AVideFacePlot::getInstance();
 }
 
 void EnChargeFacePlot::peser() {
