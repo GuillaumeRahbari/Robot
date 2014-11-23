@@ -1,6 +1,7 @@
 #include "ObservateurConcret.h"
+#include "Robot.h"
 
 void ObservateurConcret::afficher() {
-	// TODO - implement Afficheur 1::afficher
-	throw "Not yet implemented";
+	string ordre = Robot::getOrdre();
+	cout << ordre << endl;
 }

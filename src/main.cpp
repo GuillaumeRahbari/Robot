@@ -11,6 +11,7 @@
 #include "Position.h"
 #include "Objet.h"
 #include "Robot.h"
+#include "Observateur.h"
 
 using namespace std;
 
@@ -22,6 +23,11 @@ int main(int argc, const char * argv[]) {
     Objet obj(5);
     cout << obj << endl;
     Robot r;
-    cout << r;
+    //cout << r;
+    Observateur ob;
+    r.attacherAfficheur(*ob);
+    r.avancer(4, 3);
+    r.rencontrerPlot(p);
+
     return 0;
 }

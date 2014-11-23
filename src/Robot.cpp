@@ -20,6 +20,7 @@ void Robot::avancer(int x, int y) {
 		etat.avancer();
 		p.setX(x);
 		p.setY(y);
+		notifier();
 	} catch (exception e){
 		cout << &e << endl;
 	}
@@ -31,6 +32,7 @@ void Robot::tourner(string d) {
 		ordre = "tourner " + d;
 		direction = d;
 		plot = NULL;
+		notifier();
 	} catch (exception e){
 		cout << &e << endl;
 	}
@@ -40,6 +42,7 @@ void Robot::saisir(Objet o) {
 	try{
 		etat = etat.saisir();
 		ob = o;
+		notifier();
 	} catch (exception e){
 		cout << &e << endl;
 	}
@@ -49,6 +52,7 @@ void Robot::poser() {
 	try{
 		etat = etat.poser();
 		ob = NULL;
+		notifier();
 	} catch (exception e){
 		cout << &e << endl;
 	}
@@ -57,6 +61,7 @@ void Robot::poser() {
 int Robot::peser() {
 	try {
 		etat.peser();
+		notifier();
 		return ob.getPoids();
 	} catch (exception e){
 		cout << &e << endl;
@@ -68,6 +73,7 @@ void Robot::rencontrerPlot(Plot p) {
 	try{
 		etat = etat.rencontrerPlot();
 		plot = p;
+		notifier();
 	} catch (exception e){
 		cout << &e << endl;
 	}
@@ -76,6 +82,7 @@ void Robot::rencontrerPlot(Plot p) {
 int Robot::evaluerPlot() {
     try{
     	etat.evaluerPlot();
+    	notifier();
     	return plot.getHauteur();
     } catch (exception e){
     	cout << &e << endl;
@@ -86,13 +93,19 @@ int Robot::evaluerPlot() {
 void Robot::figer() {
 	try{
 		etat = etat.figer(etat);
+		notifier();
 	} catch (exception e){
 		cout << &e << endl;
 	}
 }
 
 void Robot::repartir() {
-	etat = etat.repartir();
+	try{
+		etat = etat.repartir();
+		notifier();
+	} catch (exception e){
+		cout << &e << endl;
+	}
 }
 
 void Robot::afficher() {
@@ -106,4 +119,8 @@ EtatRobot Robot::getEtat(){
 
 void Robot::setEtat(EtatRobot e){
 	etat = e;
+}
+
+string Robot::getOrdre(){
+	return ordre;
 }

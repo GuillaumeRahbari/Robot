@@ -4,19 +4,19 @@
 
 
 void Observable::notifier() {
-	for (int i = 0; i<liste.end(); i++){
-		liste[i].afficher();
+	for (int i = 0; i < liste.size(); i++){
+		liste[i] -> afficher();
 	}
 }
 
-void Observable::attacherAfficheur(Observateur ob) {
+void Observable::attacherAfficheur(Observateur *ob) {
 	liste.push_back(ob);
 }
 
-void Observable::detacherAfficheur(Observateur ob) {
-	for (int i = 0; i < liste.end(); i++){
+void Observable::detacherAfficheur(Observateur *ob) {
+	for (int i = 0; i < liste.size(); i++){
 		if (liste[i] == ob){
-			liste.erase(liste.begin()+i);
+			liste.erase(i);
 		}
 	}
 }

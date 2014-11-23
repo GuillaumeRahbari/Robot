@@ -32,7 +32,7 @@ class Robot : public Observable{
 		Objet ob;
 
 	public:
-        Robot(Position pos = Position(), string dir = "N", string ordre = "", Plot plot = Plot(), Objet obj = Objet());
+        Robot(Position pos = Position(), string dir = "N", string ordre = "salut, salut !", Plot plot = Plot(), Objet obj = Objet());
     
         friend ostream& operator<< (ostream&, Robot const&);
     
@@ -63,6 +63,8 @@ class Robot : public Observable{
 		EtatRobot getEtat();
 
 		void setEtat(EtatRobot);
+
+		string getOrdre();
 };
 
 #endif

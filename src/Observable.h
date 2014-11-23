@@ -16,14 +16,14 @@ using namespace std;
 
 class Observable {
 	private:
-		vector<Observateur> liste;
+		vector<Observateur *> liste;
 
 	public:
 		void notifier();
 
-		void attacherAfficheur(Observateur);
+		void attacherAfficheur(Observateur *);
 
-		void detacherAfficheur(Observateur);
+		void detacherAfficheur(Observateur *);
 };
 
 #endif
