@@ -16,7 +16,7 @@ namespace Robot {
 
 
 	public:
-		void figer();
+		EtatRobot figer();
 	};
 }
 

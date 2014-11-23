@@ -17,7 +17,7 @@ namespace Robot {
 	public:
 		void figer();
 
-		void repartir();
+		EtatRobot repartir();
 
 		EtatRobot tourner();
 

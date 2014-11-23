@@ -39,13 +39,11 @@ int Robot::evaluerPlot() {
 }
 
 void Robot::figer() {
-	// TODO - implement Robot::figer
-	throw "Not yet implemented";
+	etat = Figer(etat.figer());
 }
 
 void Robot::repartir() {
-	// TODO - implement Robot::repartir
-	throw "Not yet implemented";
+	etat = etat.repartir();
 }
 
 void Robot::afficher() {

@@ -1,12 +1,15 @@
 #include "Figer.h"
 using namespace Robot;
 
-void Figer::repartir() {
-	// TODO - implement Figer::repartir
-	throw "Not yet implemented";
+Figer::Figer(EtatRobot e){
+	etat = e;
 }
 
 void Figer::afficher() {
 	// TODO - implement Figer::afficher
 	throw "Not yet implemented";
+}
+
+EtatRobot Figer::repartir(){
+	return etat;
 }

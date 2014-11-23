@@ -18,7 +18,9 @@ namespace Robot {
 		EtatRobot etat;
         
     public:
-		void repartir();
+		Figer(EtatRobot);
+
+		EtatRobot repartir();
 
 		void afficher();
 	};

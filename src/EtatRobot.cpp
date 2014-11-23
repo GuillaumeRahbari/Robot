@@ -2,13 +2,11 @@
 using namespace Robot;
 
 void EtatRobot::figer() {
-	// TODO - implement EtatRobot::figer
-	throw "Not yet implemented";
+	throw "Vous ne pouvez pas vous figer si vous l'êtes déjà";
 }
 
-void EtatRobot::repartir() {
-	// TODO - implement EtatRobot::repartir
-	throw "Not yet implemented";
+EtatRobot EtatRobot::repartir() {
+	throw "Vous ne pouvez pas repartir si vous n'êtes pas figé";
 }
 
 EtatRobot EtatRobot::tourner() {
