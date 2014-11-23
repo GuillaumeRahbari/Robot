@@ -20,6 +20,10 @@ class EtatRobot {
     
         //friend ostream& operator<< (ostream&, EtatRobot const&);
     
+    virtual void ecritNom(ostream& os) const{
+        os << "mère";
+    }
+    
 		EtatRobot figer(EtatRobot);
 
 		EtatRobot repartir();
