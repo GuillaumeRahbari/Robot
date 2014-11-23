@@ -1,13 +1,26 @@
 #include "Robot.h"
 using namespace std;
 
+Robot::Robot(Position pos, string dir, string ordre, Plot plot, Objet obj) :
+etat(*EtatRobot::initialisation()), p(pos), direction(dir), ordre(ordre), plot(plot), ob(obj){}
+
+ostream& operator<< (ostream& flux, Robot const& robot){
+    flux << robot.etat <<endl;
+    flux << robot.p << endl;
+    flux << robot.direction << endl;
+    flux << robot.ob << endl;
+    flux << robot.ordre << endl;
+    flux << robot.plot << endl;
+    return flux;
+}
+
 void Robot::avancer(int x, int y) {
 	try{
 		etat.avancer();
 		p.setX(x);
 		p.setY(y);
-	} catch (exception &e){
-		cout << e << endl;
+	} catch (exception e){
+		cout << &e << endl;
 	}
 }
 
@@ -37,8 +50,8 @@ void Robot::rencontrerPlot(Plot p) {
 	try{
 		etat = etat.rencontrerPlot();
 		plot = p;
-	} catch (exception &e){
-		cout << e << endl;
+	} catch (exception e){
+		cout << &e << endl;
 	}
 }
 
