@@ -1,8 +1,10 @@
 #include "Observable.h"
 
 void Observable::notifier() {
-	// TODO - implement Vue::notifier
-	throw "Not yet implemented";
+	set<Observable>::iterator it = this->liste.begin();
+	for (it ; it != this->operateurs.end() ; it ++){
+		it -> afficher();
+	}
 }
 
 void Observable::attacherAfficheur(Observateur ob) {
