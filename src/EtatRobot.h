@@ -10,10 +10,16 @@
 #define Robot_EtatRobot_h
 
 #include <stddef.h>
+#include <iostream>
+
+using namespace std;
 
 class EtatRobot {
 
 	public:
+    
+        friend ostream& operator<< (ostream&, EtatRobot const&);
+    
 		EtatRobot figer(EtatRobot);
 
 		EtatRobot repartir();
