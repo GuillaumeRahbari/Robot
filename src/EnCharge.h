@@ -28,7 +28,7 @@ class EnCharge : public EnRoute {
         
         EtatRobot tourner();
         
-        int peser();
+        void peser();
         
         EtatRobot rencontrerPlot();
         

@@ -20,9 +20,8 @@ EtatRobot AVideFacePlot::tourner() {
     return *AVide::getInstance();
 }
 
-void AVideFacePlot::saisir() {
-	// TODO - implement AVideFacePlot::saisir
-	throw "Not yet implemented";
+EtatRobot AVideFacePlot::saisir() {
+	return *EnChargeFacePlot::getInstance();
 }
 
 void AVideFacePlot::afficher() {

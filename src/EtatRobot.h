@@ -26,7 +26,7 @@ class EtatRobot {
 
 		EtatRobot tourner();
 
-		void saisir();
+		EtatRobot saisir();
 
 		void avancer();
 

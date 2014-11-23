@@ -26,7 +26,7 @@ class EnChargeFacePlot : public EnRoute {
         
         void poser();
         
-        int peser();
+        void peser();
         
         EtatRobot tourner();
         

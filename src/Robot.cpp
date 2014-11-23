@@ -36,18 +36,25 @@ void Robot::tourner(string d) {
 }
 
 void Robot::saisir(Objet o) {
-	// TODO - implement Robot::saisir
-	throw "Not yet implemented";
+	try{
+		etat = etat.saisir();
+		ob = o;
+	} catch (exception e){
+		cout << &e << endl;
+	}
 }
 
 void Robot::poser() {
-	// TODO - implement Robot::poser
 	throw "Not yet implemented";
 }
 
 int Robot::peser() {
-	// TODO - implement Robot::peser
-	throw "Not yet implemented";
+	try {
+		etat.peser();
+		return ob.getPoids();
+	} catch (exception e){
+		cout << &e << endl;
+	}
 }
 
 void Robot::rencontrerPlot(Plot p) {

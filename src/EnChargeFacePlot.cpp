@@ -26,9 +26,7 @@ void EnChargeFacePlot::poser() {
     throw "Not yet implemented";
 }
 
-int EnChargeFacePlot::peser() {
-    // TODO - implement EnChargeFacePlot::peser
-    throw "Not yet implemented";
+void EnChargeFacePlot::peser() {
 }
 
 EtatRobot EnChargeFacePlot::tourner() {

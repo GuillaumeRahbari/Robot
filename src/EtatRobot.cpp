@@ -13,9 +13,8 @@ EtatRobot EtatRobot::tourner() {
     throw "Vous ne pouvez pas vous deplacer quand vous etes fige";
 }
 
-void EtatRobot::saisir() {
-	// TODO - implement EtatRobot::saisir
-	throw "Not yet implemented";
+EtatRobot EtatRobot::saisir() {
+	throw "vous ne pouvez rien saisir dans cet etat";
 }
 
 void EtatRobot::avancer() {
@@ -31,8 +30,7 @@ void EtatRobot::evaluerPlot() {
 }
 
 void EtatRobot::peser() {
-	// TODO - implement EtatRobot::peser
-	throw "Not yet implemented";
+	throw "Vous ne pouvez rien peser si vous n'avez pas d'objet";
 }
 
 void EtatRobot::poser() {

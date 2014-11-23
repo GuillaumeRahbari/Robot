@@ -28,9 +28,7 @@ EtatRobot EnCharge::tourner() {
     return *getInstance();
 }
 
-int EnCharge::peser() {
-    // TODO - implement EnCharge::peser
-    throw "Not yet implemented";
+void EnCharge::peser() {
 }
 
 EtatRobot EnCharge::rencontrerPlot() {

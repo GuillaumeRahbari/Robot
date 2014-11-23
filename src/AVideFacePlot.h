@@ -27,7 +27,7 @@ class AVideFacePlot : public EnRoute {
 
 		EtatRobot tourner();
 
-		void saisir();
+		EtatRobot saisir();
 
 		void afficher();
 };
