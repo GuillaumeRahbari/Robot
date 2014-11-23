@@ -31,6 +31,10 @@ class Robot {
 		Objet ob;
 
 	public:
+        Robot(Position pos = Position(), string dir = "N", string ordre = "", Plot plot = Plot(), Objet obj = Objet());
+    
+        friend ostream& operator<< (ostream&, Robot const&);
+    
 		void avancer(int, int);
 
 		void tourner(string);
