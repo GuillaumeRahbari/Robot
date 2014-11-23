@@ -27,7 +27,7 @@ class AVide : public EnRoute {
 
 		EtatRobot tourner();
 
-		void rencontrerPlot();
+		EtatRobot rencontrerPlot();
 
 		void afficher();
 };
