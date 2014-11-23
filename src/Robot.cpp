@@ -58,6 +58,6 @@ EtatRobot Robot::getEtat(){
 }
 
 void Robot::setEtat(EtatRobot e){
-	Robot::etat = e;
+	etat = e;
 }
 }
