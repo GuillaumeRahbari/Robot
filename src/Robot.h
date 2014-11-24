@@ -23,11 +23,11 @@ using namespace std;
 class Robot : public Observable{
 
 	private:
-		string direction;
 		EtatRobot etat;
-		Observable vue;
-		string ordre;
 		Position p;
+		string direction;
+		string ordre;
+		Observable vue;
 		Plot plot;
 		Objet ob;
 

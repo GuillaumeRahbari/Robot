@@ -2,6 +2,6 @@
 #include "Robot.h"
 
 void ObservateurConcret::afficher() {
-	string ordre = Robot::getOrdre();
-	cout << ordre << endl;
+	//string ordre = Robot::getOrdre();
+	//cout << ordre << endl;
 }

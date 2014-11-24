@@ -24,10 +24,10 @@ int main(int argc, const char * argv[]) {
     cout << obj << endl;
     Robot r;
     //cout << r;
-    Observateur ob;
-    r.attacherAfficheur(*ob);
-    r.avancer(4, 3);
-    r.rencontrerPlot(p);
+    //Observateur ob;
+    //r.attacherAfficheur(*ob);
+    //r.avancer(4, 3);
+    //r.rencontrerPlot(p);
 
     return 0;
 }

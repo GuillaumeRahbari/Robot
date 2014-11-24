@@ -31,7 +31,6 @@ void Robot::tourner(string d) {
 		etat = etat.tourner();
 		ordre = "tourner " + d;
 		direction = d;
-		plot = NULL;
 		notifier();
 	} catch (exception e){
 		cout << &e << endl;
@@ -51,7 +50,6 @@ void Robot::saisir(Objet o) {
 void Robot::poser() {
 	try{
 		etat = etat.poser();
-		ob = NULL;
 		notifier();
 	} catch (exception e){
 		cout << &e << endl;
