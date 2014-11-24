@@ -9,6 +9,8 @@
 #ifndef Robot_Afficheur_h
 #define Robot_Afficheur_h
 
+#include "Robot.h"
+
 class Observateur {
 
 

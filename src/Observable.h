@@ -23,7 +23,7 @@ class Observable {
 
 		void attacherAfficheur(Observateur *);
 
-		void detacherAfficheur(Observateur *);
+		void detacherAfficheur();
 };
 
 #endif

@@ -12,9 +12,11 @@
 #include "Observateur.h"
 
 class ObservateurConcret : public Observateur {
-
+private:
+	Robot* robot;
 
 public:
+	ObservateurConcret(Robot* r):robot(r){}
 	void afficher();
 };
 
