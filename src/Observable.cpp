@@ -1,10 +1,10 @@
 #include "Observable.h"
 #include <iostream>
-#include "Observateur.h"
+
 
 
 void Observable::notifier() {
-	for(Observateur* ob : liste){
+	for(Observateur *ob : liste){
 		ob -> afficher();
 	}
 }

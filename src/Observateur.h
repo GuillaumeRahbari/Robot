@@ -12,7 +12,8 @@
 class Observateur {
 
 public:
-	void afficher();
+	class bad_affichage{};
+	virtual void afficher();
 	
 };
 

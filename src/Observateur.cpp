@@ -1,5 +1,5 @@
 #include "Observateur.h"
 
 void Observateur::afficher() {
-	throw "Cet observateur ne peut rien afficher";
+	throw bad_affichage();
 }

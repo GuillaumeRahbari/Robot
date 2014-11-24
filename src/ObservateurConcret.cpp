@@ -5,5 +5,5 @@
 
 void ObservateurConcret::afficher() {
 	cout << "****Etat du Robot****" << endl;
-	cout << robot << endl;
+	cout << *robot << endl;
 }

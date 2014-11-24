@@ -12,6 +12,7 @@
 #include "Objet.h"
 #include "Robot.h"
 #include "Observateur.h"
+#include "ObservateurConcret.h"
 
 using namespace std;
 
