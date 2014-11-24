@@ -23,15 +23,12 @@ int main(int argc, const char * argv[]) {
     Objet obj(5);
     //cout << obj << endl;
     Robot r;
-    cout << r << endl;
-    r.tourner("N");
-    cout << r << endl;
-    r.rencontrerPlot(p);
-    cout << r << endl;
-    /*ObservateurConcret ob(&r);
+    ObservateurConcret ob(&r);
     r.attacherAfficheur(&ob);
+    r.tourner("E");
+    r.rencontrerPlot(p);
     r.avancer(4, 3);
-    r.rencontrerPlot(p);*/
+    r.rencontrerPlot(p);
 
     return 0;
 }
