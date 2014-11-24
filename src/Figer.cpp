@@ -12,3 +12,7 @@ void Figer::afficher() {
 EtatRobot Figer::repartir(){
 	return etat;
 }
+
+void Figer::ecritNom(ostream& os) const{
+	os << "Le robot est dans l'etat : Figer";
+}

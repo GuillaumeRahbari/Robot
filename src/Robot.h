@@ -16,14 +16,13 @@
 #include <stddef.h>
 #include "Position.h"
 #include "Observable.h"
-#include "Observable.h"
 
 using namespace std;
 
 class Robot : public Observable{
 
 	protected:
-		EtatRobot etat;
+		EtatRobot* etat;
 		Position p;
 		string direction;
 		string ordre;
@@ -61,9 +60,9 @@ class Robot : public Observable{
 
 		void afficher();
 
-		EtatRobot getEtat();
+		EtatRobot* getEtat();
 
-		void setEtat(EtatRobot);
+		void setEtat(EtatRobot*);
 
 		string getOrdre();
 };

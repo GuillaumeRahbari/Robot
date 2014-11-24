@@ -13,23 +13,25 @@
 
 class AVideFacePlot : public EnRoute {
 
-	private:
-		static AVideFacePlot* INSTANCE;
+private:
+	static AVideFacePlot* INSTANCE;
 
-		AVideFacePlot();
+	AVideFacePlot();
 
-	public:
-        friend ostream& operator<< (ostream&, AVideFacePlot const&);
-    
-		static AVideFacePlot* getInstance();
+public:
+	virtual void ecritNom(ostream& os) const;
+	
+    friend ostream& operator<< (ostream&, AVideFacePlot const&);
 
-		void evaluerPlot();
+	static AVideFacePlot* getInstance();
 
-		EtatRobot tourner();
+	void evaluerPlot();
 
-		EtatRobot saisir();
+	EtatRobot tourner();
 
-		void afficher();
+	EtatRobot saisir();
+
+	void afficher();
 };
 
 #endif

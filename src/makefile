@@ -23,4 +23,4 @@ Position.o : Position.h
 Robot.o : Robot.h
 Observable.o : Observable.h
 
-main.o : Observateur.h ObservateurConcret.h AVide.h AVideFacePlot.h EnCharge.h EnChargeFacePlot.h EnRoute.h EtatRobot.h Figer.h Objet.h Plot.h Position.h Robot.h Observable.h
+main.o : Observateur.h ObservateurConcret.h AVide.h AVideFacePlot.h EnCharge.h EnChargeFacePlot.h EnRoute.h EtatRobot.h Figer.h Objet.h Plot.h Position.h Robot.h Observable.h common_defs.h

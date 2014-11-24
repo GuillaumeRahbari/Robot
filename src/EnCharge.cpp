@@ -13,8 +13,8 @@ EnCharge* EnCharge::INSTANCE = new EnCharge();
 
 EnCharge::EnCharge (){}
 
-ostream& operator<< (ostream& flux, EnCharge const& encharge){
-    return flux << "Etat : EnCharge";
+void EnCharge::ecritNom(ostream& os) const{
+	os << "Le robot est dans l'etat : EnCharge";
 }
 
 EnCharge* EnCharge::getInstance() {

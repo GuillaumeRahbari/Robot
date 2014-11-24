@@ -14,8 +14,8 @@ EnChargeFacePlot* EnChargeFacePlot::INSTANCE = new EnChargeFacePlot();
 
 EnChargeFacePlot::EnChargeFacePlot(){}
 
-ostream& operator<< (ostream& flux, EnChargeFacePlot const& enchargeFacePlot){
-    return flux << "Etat : EnChargeFacePlot";
+void EnChargeFacePlot::ecritNom(ostream& os) const{
+	os << "Le robot est dans l'etat : EnChargeFacePlot";
 }
 
 EnChargeFacePlot* EnChargeFacePlot::getInstance() {

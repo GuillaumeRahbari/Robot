@@ -13,15 +13,17 @@
 
 class Figer : public EtatRobot {
 
-	private:
-		EtatRobot etat;
-    
-    public:
-		Figer(EtatRobot);
+private:
+	EtatRobot etat;
 
-		EtatRobot repartir();
+public:
+	Figer(EtatRobot);
 
-		void afficher();
+	EtatRobot repartir();
+
+	void afficher();
+
+	virtual void ecritNom(ostream& os) const;
 };
 
 #endif

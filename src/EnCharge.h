@@ -14,25 +14,27 @@
 
 class EnCharge : public EnRoute {
         
-    private:
-        static EnCharge* INSTANCE;
-        
-        EnCharge();
+private:
+    static EnCharge* INSTANCE;
     
-    public:
-        friend ostream& operator<< (ostream&, EnCharge const&);
+    EnCharge();
+
+public:
+    virtual void ecritNom(ostream& os) const;
     
-        static EnCharge* getInstance();
-        
-        void avancer();
-        
-        EtatRobot tourner();
-        
-        void peser();
-        
-        EtatRobot rencontrerPlot();
-        
-        void afficher();
+    friend ostream& operator<< (ostream&, EnCharge const&);
+
+    static EnCharge* getInstance();
+    
+    void avancer();
+    
+    EtatRobot tourner();
+    
+    void peser();
+    
+    EtatRobot rencontrerPlot();
+    
+    void afficher();
 };
 
 #endif /* defined(__Robot__EnCharge__) */

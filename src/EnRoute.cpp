@@ -4,3 +4,7 @@
 EtatRobot EnRoute::figer(EtatRobot e) {
     return Figer(e);
 }
+
+void EnRoute::ecritNom(ostream& os) const{
+	cout << "cc";
+}

@@ -13,27 +13,23 @@
 
 class AVide : public EnRoute {
 
-	private:
-		static AVide* INSTANCE;
+private:
+	static AVide* INSTANCE;
 
-		AVide();
+	AVide();
 
-	public:
-        //friend ostream& operator<< (ostream&, AVide const&);
+public:
+	virtual void ecritNom(ostream& os) const;
     
-    	virtual void ecritNom(ostream& os) const{
-        os << "fille";
-    	};
-    
-		static AVide* getInstance();
+	static AVide* getInstance();
 
-		void avancer();
+	void avancer();
 
-		EtatRobot tourner();
+	EtatRobot* tourner();
 
-		EtatRobot rencontrerPlot();
+	EtatRobot* rencontrerPlot();
 
-		void afficher();
+	void afficher();
 };
 
 #endif

@@ -18,38 +18,31 @@ class EtatRobot {
 
 	public:
     
-        friend ostream& operator<< (ostream& os, const EtatRobot& etat){
-        	cout << "passe tu par là ?";
-        	etat.ecritNom(os);
-        	return os;
-        }
-    
-    	virtual void ecritNom(ostream& os) const{
-    	cout << "cc etat";
-        os << "mère etat";
-    	}
-    
-		EtatRobot figer(EtatRobot);
+	friend ostream& operator<< (ostream& os, const EtatRobot& etat);
 
-		EtatRobot repartir();
+	virtual void ecritNom(ostream& os) const;
 
-		EtatRobot tourner();
+	EtatRobot* figer(EtatRobot);
 
-		EtatRobot saisir();
+	EtatRobot* repartir();
 
-		void avancer();
+	EtatRobot* tourner();
 
-		EtatRobot rencontrerPlot();
+	EtatRobot* saisir();
 
-		void evaluerPlot();
+	void avancer();
 
-		void peser();
+	EtatRobot* rencontrerPlot();
 
-		EtatRobot poser();
+	void evaluerPlot();
 
-		void afficher();
+	void peser();
 
-		static EtatRobot initialisation();
+	EtatRobot* poser();
+
+	void afficher();
+
+	static EtatRobot* initialisation();
 };
 
 #endif

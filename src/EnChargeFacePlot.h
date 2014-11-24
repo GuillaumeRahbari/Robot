@@ -14,27 +14,23 @@
 
 class EnChargeFacePlot : public EnRoute {
         
-    private:
-        static EnChargeFacePlot* INSTANCE;
-        
-        EnChargeFacePlot();
+private:
+    static EnChargeFacePlot* INSTANCE;
     
-    public:
-        friend ostream& operator<< (ostream&, EnChargeFacePlot const&);
+    EnChargeFacePlot();
+
+public:
+    virtual void ecritNom(ostream& os) const;
+
+    static EnChargeFacePlot* getInstance();
     
-    virtual void ecritNom(ostream& os) const{
-        os << "fille";
-    }
+    EtatRobot poser();
     
-        static EnChargeFacePlot* getInstance();
-        
-        EtatRobot poser();
-        
-        void peser();
-        
-        EtatRobot tourner();
-        
-        void afficher();
+    void peser();
+    
+    EtatRobot tourner();
+    
+    void afficher();
 };
 
 #endif /* defined(__Robot__EnChargeFacePlot__) */
