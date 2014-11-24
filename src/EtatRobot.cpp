@@ -42,6 +42,6 @@ void EtatRobot::afficher() {
 	throw "Not yet implemented";
 }
 
-EtatRobot* EtatRobot::initialisation(){
-	return AVide::getInstance();
+EtatRobot EtatRobot::initialisation(){
+	return *AVide::getInstance();
 }

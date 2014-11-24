@@ -5,9 +5,9 @@ AVide* AVide::INSTANCE = new AVide();
 
 AVide::AVide() {}
 
-ostream& operator<< (ostream& flux, AVide const& avide){
+/*ostream& operator<< (ostream& flux, AVide const& avide){
     return flux << "Etat : AVide";
-}
+}*/
 
 AVide* AVide::getInstance() {
     return INSTANCE;

@@ -17,9 +17,10 @@ class EnRoute : public EtatRobot {
 	public:
 		EtatRobot figer(EtatRobot);
     
-    virtual void ecritNom(ostream& os) const{
+    	virtual void ecritNom(ostream& os) const{
+    		cout << "cc enroute";
         os << "mère2";
-    }
+    	}
 };
 
 #endif

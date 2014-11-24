@@ -22,7 +22,7 @@ using namespace std;
 
 class Robot : public Observable{
 
-	private:
+	protected:
 		EtatRobot etat;
 		Position p;
 		string direction;
@@ -37,6 +37,7 @@ class Robot : public Observable{
         friend ostream& operator<< (ostream&, Robot const&);
     
     virtual void ecritNom(ostream& os) const{
+    	cout << "cc rob";
         os << "mère";
     }
     

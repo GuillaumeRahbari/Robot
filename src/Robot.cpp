@@ -3,10 +3,10 @@
 using namespace std;
 
 Robot::Robot(Position pos, string dir, string ordre, Plot plot, Objet obj) :
-etat(*EtatRobot::initialisation()), p(pos), direction(dir), ordre(ordre), plot(plot), ob(obj){}
+etat(EtatRobot::initialisation()), p(pos), direction(dir), ordre(ordre), plot(plot), ob(obj){}
 
 ostream& operator<< (ostream& flux, Robot const& robot){
-    robot.etat.ecritNom(flux);
+	cout << robot.etat;
     flux << robot.p << endl;
     flux << robot.direction << endl;
     flux << robot.ob << endl;
