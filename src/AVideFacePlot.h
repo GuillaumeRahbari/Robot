@@ -27,9 +27,9 @@ public:
 
 	void evaluerPlot();
 
-	EtatRobot tourner();
+	EtatRobot* tourner();
 
-	EtatRobot saisir();
+	EtatRobot* saisir();
 
 	void afficher();
 };

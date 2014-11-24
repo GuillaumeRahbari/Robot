@@ -24,13 +24,13 @@ public:
 
     static EnChargeFacePlot* getInstance();
     
-    EtatRobot poser();
+    virtual EtatRobot* poser();
     
-    void peser();
+    virtual void peser();
     
-    EtatRobot tourner();
+    virtual EtatRobot* tourner();
     
-    void afficher();
+    virtual void afficher();
 };
 
 #endif /* defined(__Robot__EnChargeFacePlot__) */

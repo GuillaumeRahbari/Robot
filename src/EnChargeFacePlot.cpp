@@ -22,15 +22,15 @@ EnChargeFacePlot* EnChargeFacePlot::getInstance() {
     return INSTANCE;
 }
 
-EtatRobot EnChargeFacePlot::poser() {
-    return *AVideFacePlot::getInstance();
+EtatRobot* EnChargeFacePlot::poser() {
+    return AVideFacePlot::getInstance();
 }
 
 void EnChargeFacePlot::peser() {
 }
 
-EtatRobot EnChargeFacePlot::tourner() {
-    return *EnCharge::getInstance();
+EtatRobot* EnChargeFacePlot::tourner() {
+    return EnCharge::getInstance();
 }
 
 void EnChargeFacePlot::afficher() {

@@ -17,17 +17,21 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     Plot p(5);
-   // cout << p << endl;
+    //cout << p << endl;
     Position pos(3,2);
     //cout << pos << endl;
     Objet obj(5);
     //cout << obj << endl;
     Robot r;
-    //cout << r;
-    ObservateurConcret ob(&r);
+    cout << r << endl;
+    r.tourner("N");
+    cout << r << endl;
+    r.rencontrerPlot(p);
+    cout << r << endl;
+    /*ObservateurConcret ob(&r);
     r.attacherAfficheur(&ob);
     r.avancer(4, 3);
-    r.rencontrerPlot(p);
+    r.rencontrerPlot(p);*/
 
     return 0;
 }

@@ -21,7 +21,7 @@ using namespace std;
 
 class Robot : public Observable{
 
-	protected:
+	private:
 		EtatRobot* etat;
 		Position p;
 		string direction;

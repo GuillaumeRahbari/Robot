@@ -1,13 +1,13 @@
 //
-//  Vue.h
+//  Observable.h
 //  Robot
 //
 //  Created by Guillaume Rahbari on 16/11/2014.
 //  Copyright (c) 2014 Guillaume Rahbari. All rights reserved.
 //
 
-#ifndef Robot_Vue_h
-#define Robot_Vue_h
+#ifndef Robot_Observable_h
+#define Robot_Observable_h
 
 #include "Observateur.h"
 #include <vector>
@@ -15,15 +15,15 @@
 using namespace std;
 
 class Observable {
-	private:
-		vector<Observateur *> liste;
+private:
+	vector<Observateur *> liste;
 
-	public:
-		void notifier();
+public:
+	void notifier();
 
-		void attacherAfficheur(Observateur *);
+	void attacherAfficheur(Observateur *);
 
-		void detacherAfficheur();
+	void detacherAfficheur();
 };
 
 #endif

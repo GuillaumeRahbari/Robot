@@ -19,39 +19,39 @@ void EtatRobot::ecritNom(ostream& os) const{
 }
 
 EtatRobot* EtatRobot::figer(EtatRobot e) {
-	throw "Vous ne pouvez pas vous figer si vous l'etes deja ";
+	throw Bad_Mouvement();
 }
 
 EtatRobot* EtatRobot::repartir() {
-	throw "Vous ne pouvez pas repartir si vous n'etes pas fige";
+	throw Bad_Mouvement();
 }
 
 EtatRobot* EtatRobot::tourner() {
-    throw "Vous ne pouvez pas vous deplacer quand vous etes fige";
+    throw Bad_Mouvement();
 }
 
 EtatRobot* EtatRobot::saisir() {
-	throw "vous ne pouvez rien saisir dans cet etat";
+	throw Bad_Mouvement();
 }
 
 void EtatRobot::avancer() {
-	throw "Il est impossible d'avancer dans cet etat.";
+	throw Bad_Mouvement();
 }
 
 EtatRobot* EtatRobot::rencontrerPlot() {
-	throw "Vous etes deja face a un plot";
+	throw Bad_Mouvement();
 }
 
 void EtatRobot::evaluerPlot() {
-	throw "Impossible d'evaluer un plot dans cet etat";
+	throw Bad_Mouvement();
 }
 
 void EtatRobot::peser() {
-	throw "Vous ne pouvez rien peser si vous n'avez pas d'objet";
+	throw Bad_Mouvement();
 }
 
 EtatRobot* EtatRobot::poser() {
-	throw "Vous n'avez rien a deposer";
+	throw Bad_Mouvement();
 }
 
 void EtatRobot::afficher() {

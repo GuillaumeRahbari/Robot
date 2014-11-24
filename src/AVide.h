@@ -23,13 +23,13 @@ public:
     
 	static AVide* getInstance();
 
-	void avancer();
+	virtual void avancer();
 
-	EtatRobot* tourner();
+	virtual EtatRobot* tourner();
 
-	EtatRobot* rencontrerPlot();
+	virtual EtatRobot* rencontrerPlot();
 
-	void afficher();
+	virtual void afficher();
 };
 
 #endif

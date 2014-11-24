@@ -22,27 +22,30 @@ class EtatRobot {
 
 	virtual void ecritNom(ostream& os) const;
 
-	EtatRobot* figer(EtatRobot);
+	virtual EtatRobot* figer(EtatRobot);
 
-	EtatRobot* repartir();
+	virtual EtatRobot* repartir();
 
-	EtatRobot* tourner();
+	virtual EtatRobot* tourner();
 
-	EtatRobot* saisir();
+	virtual EtatRobot* saisir();
 
-	void avancer();
+	virtual void avancer();
 
-	EtatRobot* rencontrerPlot();
+	virtual EtatRobot* rencontrerPlot();
 
-	void evaluerPlot();
+	virtual void evaluerPlot();
 
-	void peser();
+	virtual void peser();
 
-	EtatRobot* poser();
+	virtual EtatRobot* poser();
 
-	void afficher();
+	virtual void afficher();
 
 	static EtatRobot* initialisation();
+
+	// Exceptions
+	class Bad_Mouvement{};
 };
 
 #endif

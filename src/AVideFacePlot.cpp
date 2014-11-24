@@ -1,3 +1,11 @@
+//
+//  AVideFacePlot.cpp
+//  Robot
+//
+//  Created by Guillaume Rahbari on 23/11/2014.
+//  Copyright (c) 2014 Guillaume Rahbari. All rights reserved.
+//
+
 #include "AVideFacePlot.h"
 #include "AVide.h"
 #include "EnChargeFacePlot.h"
@@ -17,12 +25,12 @@ AVideFacePlot* AVideFacePlot::getInstance() {
 void AVideFacePlot::evaluerPlot() {
 }
 
-EtatRobot AVideFacePlot::tourner() {
-    return *AVide::getInstance();
+EtatRobot* AVideFacePlot::tourner() {
+    return AVide::getInstance();
 }
 
-EtatRobot AVideFacePlot::saisir() {
-	return *EnChargeFacePlot::getInstance();
+EtatRobot* AVideFacePlot::saisir() {
+	return EnChargeFacePlot::getInstance();
 }
 
 void AVideFacePlot::afficher() {

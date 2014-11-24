@@ -24,15 +24,15 @@ EnCharge* EnCharge::getInstance() {
 void EnCharge::avancer() {
 }
 
-EtatRobot EnCharge::tourner() {
-    return *getInstance();
+EtatRobot* EnCharge::tourner() {
+    return getInstance();
 }
 
 void EnCharge::peser() {
 }
 
-EtatRobot EnCharge::rencontrerPlot() {
-    return *EnChargeFacePlot::getInstance();
+EtatRobot* EnCharge::rencontrerPlot() {
+    return EnChargeFacePlot::getInstance();
 }
 
 void EnCharge::afficher() {

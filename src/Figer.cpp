@@ -1,6 +1,14 @@
+//
+//  Figer.cpp
+//  Robot
+//
+//  Created by Guillaume Rahbari on 23/11/2014.
+//  Copyright (c) 2014 Guillaume Rahbari. All rights reserved.
+//
+
 #include "Figer.h"
 
-Figer::Figer(EtatRobot e){
+Figer::Figer(EtatRobot* e){
 	etat = e;
 }
 
@@ -9,7 +17,7 @@ void Figer::afficher() {
 	throw "Not yet implemented";
 }
 
-EtatRobot Figer::repartir(){
+EtatRobot* Figer::repartir(){
 	return etat;
 }
 

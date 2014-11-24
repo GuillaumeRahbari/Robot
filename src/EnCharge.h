@@ -21,20 +21,18 @@ private:
 
 public:
     virtual void ecritNom(ostream& os) const;
-    
-    friend ostream& operator<< (ostream&, EnCharge const&);
 
     static EnCharge* getInstance();
     
-    void avancer();
+    virtual void avancer();
     
-    EtatRobot tourner();
+    virtual EtatRobot* tourner();
     
-    void peser();
+    virtual void peser();
     
-    EtatRobot rencontrerPlot();
+    virtual EtatRobot* rencontrerPlot();
     
-    void afficher();
+    virtual void afficher();
 };
 
 #endif /* defined(__Robot__EnCharge__) */
