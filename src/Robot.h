@@ -10,10 +10,11 @@
 #define Robot_Robot_h
 
 #include <string>
+#include <stddef.h>
+
 #include "EtatRobot.h"
 #include "Objet.h"
 #include "Plot.h"
-#include <stddef.h>
 #include "Position.h"
 #include "Observable.h"
 

@@ -7,11 +7,7 @@
 //
 
 #include <iostream>
-#include "Plot.h"
-#include "Position.h"
-#include "Objet.h"
 #include "Robot.h"
-#include "Observateur.h"
 #include "ObservateurConcret.h"
 
 using namespace std;
@@ -23,13 +19,23 @@ int main(int argc, const char * argv[]) {
     Objet obj(5);
     Objet obj2(2);
     Robot r;
-    ObservateurConcret ob2(&r);
-    ObservateurConcret ob(&r);
-    cout << "**** Etat initial du Robot ****" << endl;
+    Robot r2;
+    ObservateurConcret ob2(&r2, "R2");
+    ObservateurConcret ob(&r, "R1");
+    ObservateurConcret ob3(&r, "R1");
+    cout << "**** Etat initial du Robot : R1 ****" << endl;
     cout << r << endl;
+    cout << "**** Etat initial du Robot : R2 ****" << endl;
+    cout << r2 << endl;
     r.attacherAfficheur(&ob);
-    //r.attacherAfficheur(&ob2); // Possibilité de rajouter un deuxième affichage
+    //r.attacherAfficheur(&ob3); // Possibilité de rajouter un deuxième affichage sur R1
+    r2.attacherAfficheur(&ob2); 
     r.tourner("E");
+    r2.avancer(5,6);
+    r2.rencontrerPlot(p3);
+    r2.saisir(obj2);
+    r2.figer();
+    r2.repartir();
     r.rencontrerPlot(p);
     try {
         r.avancer(3, 2);
@@ -68,7 +74,7 @@ int main(int argc, const char * argv[]) {
     try{
         r.figer();
     } catch (EtatRobot::Bad_Figer) {
-        cout << "Impossible de se figé quand on l'est deja\n" << endl;
+        cout << "Impossible de se figer quand on l'est deja\n" << endl;
     }
     r.repartir();
 

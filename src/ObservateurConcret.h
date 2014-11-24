@@ -15,9 +15,10 @@
 class ObservateurConcret : public Observateur {
 private:
 	Robot* robot;
-
+	string rob;
+	
 public:
-	ObservateurConcret(Robot* r):robot(r){}
+	ObservateurConcret(Robot* r, string s = ""):robot(r), rob(s){}
 	void afficher();
 };
 
