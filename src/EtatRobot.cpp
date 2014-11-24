@@ -18,8 +18,8 @@ void EtatRobot::ecritNom(ostream& os) const{
 	cout << "cc";
 }
 
-EtatRobot* EtatRobot::figer(EtatRobot e) {
-	throw Bad_Mouvement();
+EtatRobot* EtatRobot::figer(EtatRobot* e) {
+	throw Bad_Figer();
 }
 
 EtatRobot* EtatRobot::repartir() {

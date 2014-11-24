@@ -22,7 +22,7 @@ class EtatRobot {
 
 	virtual void ecritNom(ostream& os) const;
 
-	virtual EtatRobot* figer(EtatRobot);
+	virtual EtatRobot* figer(EtatRobot*);
 
 	virtual EtatRobot* repartir();
 
@@ -46,6 +46,7 @@ class EtatRobot {
 
 	// Exceptions
 	class Bad_Mouvement{};
+	class Bad_Figer{};
 };
 
 #endif

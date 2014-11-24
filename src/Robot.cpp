@@ -20,18 +20,18 @@ Robot::Robot(Position pos, string dir, string ordre, Plot plot, Objet obj) :
 {}
 
 ostream& operator<< (ostream& flux, Robot const& robot){
+	flux << "L'odre est : " << robot.ordre << endl;
 	flux << *robot.etat << endl;
     flux << robot.p << endl;
     flux << "La direction est : " << robot.direction << endl;
-    flux << robot.ob << endl;
-    flux << "L'odre est : " << robot.ordre << endl;
+    flux << robot.ob << endl;    
     flux << robot.plot << endl;
     return flux;
 }
 
 void Robot::avancer(int x, int y) {
 	try{
-		ordre = "avancer "+to_string(x)+", "+to_string(y);
+		ordre = "avancer en "+to_string(x)+", "+to_string(y);
 		etat->avancer();
 		p.setX(x);
 		p.setY(y);
@@ -46,6 +46,7 @@ void Robot::tourner(string d) {
 		etat = etat->tourner();
 		ordre = "tourner " + d;
 		direction = d;
+		plot = 0;
 		notifier();
 	} catch (exception e){
 		cout << &e << endl;
@@ -67,6 +68,7 @@ void Robot::poser() {
 	try{
 		ordre = "poser objet";
 		etat = etat->poser();
+		ob = 0;
 		notifier();
 	} catch (exception e){
 		cout << &e << endl;
@@ -76,7 +78,7 @@ void Robot::poser() {
 int Robot::peser() {
 	try {
 		ordre = "peser objet";
-		etat->peser();
+		etat->peser();		
 		notifier();
 		return ob.getPoids();
 	} catch (exception e){
@@ -111,7 +113,7 @@ int Robot::evaluerPlot() {
 void Robot::figer() {
 	try{
 		ordre = "figer";
-		etat = etat->figer(*etat);
+		etat = etat->figer(etat);
 		notifier();
 	} catch (exception e){
 		cout << &e << endl;
