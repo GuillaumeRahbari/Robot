@@ -9,8 +9,9 @@
 #ifndef Robot_Observable_h
 #define Robot_Observable_h
 
-#include "Observateur.h"
 #include <vector>
+#include <iostream>
+#include "Observateur.h"
 
 using namespace std;
 

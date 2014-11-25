@@ -1,7 +1,4 @@
 #include "Observable.h"
-#include <iostream>
-
-
 
 void Observable::notifier() {
 	for(Observateur *ob : liste){
