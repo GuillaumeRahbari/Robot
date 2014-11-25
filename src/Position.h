@@ -15,22 +15,22 @@ using namespace std;
 
 class Position {
 
-	private:
-		int x;
-		int y;
+private:
+	int x;
+	int y;
 
-	public:
-        Position(int x = 0, int y = 0);
-    
-        friend ostream& operator<< (ostream&, Position const&);
-    
-		int getX() const;
+public:
+    Position(int x = 0, int y = 0);
 
-		void setX(int x);
+    friend ostream& operator<< (ostream&, Position const&);
 
-		int getY() const;
+	int getX() const;
 
-		void setY(int y);
+	void setX(int x);
+
+	int getY() const;
+
+	void setY(int y);
 };
 
 #endif
