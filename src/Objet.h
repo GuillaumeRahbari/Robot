@@ -15,15 +15,15 @@ using namespace std;
 
 class Objet {
 
-	private:
-		int poids;
+private:
+	int poids;
 
-	public:
-        Objet(int poids = 0);
-    
-        friend ostream& operator<< (ostream&, Objet const&);
-    
-		int getPoids() const;
+public:
+    Objet(int poids = 0);
+
+    friend ostream& operator<< (ostream&, Objet const&);
+
+	int getPoids() const;
 };
 
 #endif
