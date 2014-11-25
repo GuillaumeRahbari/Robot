@@ -7,7 +7,6 @@
 //
 
 #include "EnRoute.h"
-#include "Figer.h"
 
 EtatRobot* EnRoute::figer(EtatRobot* e) {
     return new Figer(e);

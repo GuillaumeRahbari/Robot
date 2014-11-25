@@ -10,6 +10,7 @@
 #define Robot_EnRoute_h
 
 #include "EtatRobot.h"
+#include "Figer.h"
 
 class EnRoute : public EtatRobot {
 
