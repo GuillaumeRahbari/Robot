@@ -18,7 +18,7 @@ private:
 	string rob;
 	
 public:
-	ObservateurConcret(Robot* r, string s = ""):robot(r), rob(s){}
+	ObservateurConcret (Robot* r, string s = "");
 	void afficher();
 };
 
