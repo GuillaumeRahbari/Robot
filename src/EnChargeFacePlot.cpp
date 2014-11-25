@@ -7,8 +7,6 @@
 //
 
 #include "EnChargeFacePlot.h"
-#include "EnCharge.h"
-#include "AVideFacePlot.h"
 
 EnChargeFacePlot* EnChargeFacePlot::INSTANCE = new EnChargeFacePlot();
 

@@ -7,7 +7,6 @@
 //
 
 #include "AVide.h"
-#include "AVideFacePlot.h"
 
 AVide* AVide::INSTANCE = new AVide();
 

@@ -10,6 +10,7 @@
 #define Robot_AVide_h
 
 #include "EnRoute.h"
+#include "AVideFacePlot.h"
 
 class AVide : public EnRoute {
 

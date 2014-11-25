@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 #include "EnRoute.h"
+#include "EnCharge.h"
+#include "AVideFacePlot.h"
 
 class EnChargeFacePlot : public EnRoute {
         

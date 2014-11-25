@@ -9,8 +9,8 @@
 #ifndef __Robot__EnCharge__
 #define __Robot__EnCharge__
 
-#include <stdio.h>
 #include "EnRoute.h"
+#include "EnChargeFacePlot.h"
 
 class EnCharge : public EnRoute {
         
@@ -36,5 +36,3 @@ public:
 };
 
 #endif /* defined(__Robot__EnCharge__) */
-
-
