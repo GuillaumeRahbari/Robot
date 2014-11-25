@@ -28,15 +28,11 @@ int main(int argc, const char * argv[]) {
     cout << "**** Etat initial du Robot : R2 ****" << endl;
     cout << r2 << endl;
     r.attacherAfficheur(&ob);
-    //r.attacherAfficheur(&ob3); // Possibilité de rajouter un deuxième affichage sur R1
+    r.attacherAfficheur(&ob3); // Possibilité de rajouter un deuxième affichage sur R1
     r2.attacherAfficheur(&ob2); 
-    r.tourner("E");
-    r2.avancer(5,6);
-    r2.rencontrerPlot(p3);
-    r2.saisir(obj2);
-    r2.figer();
-    r2.repartir();
-    r.rencontrerPlot(p);
+    r.tourner("E"); // afiché 2 fois 
+    r.rencontrerPlot(p); // affiché 2 fois
+    r.detacherAfficheur(&ob3); // On enlève le deuxième afficheur de R1
     try {
         r.avancer(3, 2);
     } catch (EtatRobot::Bad_Mouvement) {
@@ -49,6 +45,11 @@ int main(int argc, const char * argv[]) {
     } catch (EtatRobot::Bad_Mouvement) {
         cout << "Impossible de repartir si l'on n'est pas figé\n" << endl;
     }
+    r2.avancer(5,6);
+    r2.rencontrerPlot(p3);
+    r2.saisir(obj2);
+    r2.figer();
+    r2.repartir();
     r.rencontrerPlot(p2);
     r.saisir(obj);
     r.tourner("S");

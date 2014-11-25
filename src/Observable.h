@@ -24,7 +24,7 @@ public:
 
 	void attacherAfficheur(Observateur *);
 
-	void detacherAfficheur();
+	void detacherAfficheur(Observateur *);
 };
 
 #endif
