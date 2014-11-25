@@ -5,9 +5,9 @@
 
 #include "ObservateurConcret.h"
 
-ObservateurConcret::ObservateurConcret (Robot* r, string s) : robot(r), rob(s) {}
+ObservateurConcret::ObservateurConcret (Observable* o, string s) : ob(o), nom(s) {}
 
 void ObservateurConcret::afficher() {
-	cout << "**** Etat du Robot : " + rob + " ****" << endl;
-	cout << *robot << endl;
+	cout << "**** Etat de l'objet : " + nom + " ****" << endl;
+	ob -> afficher();
 }

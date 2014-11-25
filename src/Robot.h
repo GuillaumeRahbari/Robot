@@ -52,7 +52,9 @@ public:
 
 	void figer();
 
-	void repartir(); 
+	void repartir();
+
+	void afficher(); 
 };
 
 #endif

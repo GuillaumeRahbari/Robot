@@ -25,6 +25,11 @@ public:
 	void attacherAfficheur(Observateur *);
 
 	void detacherAfficheur(Observateur *);
+
+	virtual void afficher();
+
+	//erreur
+	class Bad_affichage{};
 };
 
 #endif

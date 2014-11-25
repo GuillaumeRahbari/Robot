@@ -129,3 +129,7 @@ void Robot::repartir() {
 		cout << &e << endl;
 	}
 }
+
+void Robot::afficher(){
+	cout << *this <<endl;
+}

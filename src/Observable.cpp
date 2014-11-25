@@ -23,3 +23,7 @@ void Observable::detacherAfficheur(Observateur *ob) {
 		}
 	}
 }
+
+void Observable::afficher(){
+	throw Bad_affichage();
+}

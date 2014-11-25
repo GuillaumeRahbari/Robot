@@ -10,15 +10,15 @@
 #define Robot_ObservateurConcret_h
 
 #include "Observateur.h"
-#include "Robot.h"
+#include "Observable.h"
 
 class ObservateurConcret : public Observateur {
 private:
-	Robot* robot;
-	string rob;
+	Observable* ob;
+	string nom;
 	
 public:
-	ObservateurConcret (Robot* r, string s = "");
+	ObservateurConcret (Observable *, string s = "");
 	void afficher();
 };
 

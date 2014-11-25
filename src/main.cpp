@@ -20,9 +20,9 @@ int main(int argc, const char * argv[]) {
     Objet obj2(2);
     Robot r;
     Robot r2;
-    ObservateurConcret ob2(&r2, "R2");
-    ObservateurConcret ob(&r, "R1");
-    ObservateurConcret ob3(&r, "R1");
+    ObservateurConcret ob2(&r2, "Robot 2");
+    ObservateurConcret ob(&r, "Robot 1");
+    ObservateurConcret ob3(&r, "Robot 1");
     cout << "**** Etat initial du Robot : R1 ****" << endl;
     cout << r << endl;
     cout << "**** Etat initial du Robot : R2 ****" << endl;
