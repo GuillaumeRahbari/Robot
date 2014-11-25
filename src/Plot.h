@@ -15,15 +15,15 @@ using namespace std;
 
 class Plot {
 
-	private:
-		int hauteur;
+private:
+	int hauteur;
 
-	public:
-        Plot(int hauteur = 0);
-        
-        friend ostream& operator<< (ostream& flux, Plot const& plot);
-        
-		int getHauteur() const;
+public:
+    Plot(int hauteur = 0);
+    
+    friend ostream& operator<< (ostream& flux, Plot const& plot);
+    
+	int getHauteur() const;
 };
 
 #endif
