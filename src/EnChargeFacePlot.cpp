@@ -30,8 +30,3 @@ void EnChargeFacePlot::peser() {
 EtatRobot* EnChargeFacePlot::tourner() {
     return EnCharge::getInstance();
 }
-
-void EnChargeFacePlot::afficher() {
-    // TODO - implement EnChargeFacePlot::afficher
-    throw "Not yet implemented";
-}

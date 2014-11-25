@@ -29,8 +29,6 @@ public:
 	virtual EtatRobot* tourner();
 
 	virtual EtatRobot* rencontrerPlot();
-
-	virtual void afficher();
 };
 
 #endif

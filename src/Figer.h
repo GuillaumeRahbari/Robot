@@ -21,8 +21,6 @@ public:
 
 	virtual EtatRobot* repartir();
 
-	virtual void afficher();
-
 	virtual void ecritNom(ostream& os) const;
 };
 

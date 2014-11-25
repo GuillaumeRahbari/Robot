@@ -130,11 +130,6 @@ void Robot::repartir() {
 	}
 }
 
-void Robot::afficher() {
-	// TODO - implement Robot::afficher
-	throw "Not yet implemented";
-}
-
 EtatRobot* Robot::getEtat(){
 	return etat;
 }

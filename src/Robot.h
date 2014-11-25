@@ -23,45 +23,43 @@ using namespace std;
 
 class Robot : public Observable{
 
-	private:
-		EtatRobot* etat;
-		Position p;
-		string direction;
-		string ordre;
-		Observable vue;
-		Plot plot;
-		Objet ob;
+private:
+	EtatRobot* etat;
+	Position p;
+	string direction;
+	string ordre;
+	Observable vue;
+	Plot plot;
+	Objet ob;
 
-	public:
-        Robot(Position pos = Position(), string dir = "N", string ordre = "", Plot plot = Plot(), Objet obj = Objet());
-    
-        friend ostream& operator<< (ostream&, Robot const&);   
-    
-		void avancer(int, int);
+public:
+    Robot(Position pos = Position(), string dir = "N", string ordre = "", Plot plot = Plot(), Objet obj = Objet());
 
-		void tourner(string);
+    friend ostream& operator<< (ostream&, Robot const&);   
 
-		void saisir(Objet o);
+	void avancer(int, int);
 
-		void poser();
+	void tourner(string);
 
-		int peser();
+	void saisir(Objet o);
 
-		void rencontrerPlot(Plot p);
+	void poser();
 
-		int evaluerPlot();
+	int peser();
 
-		void figer();
+	void rencontrerPlot(Plot p);
 
-		void repartir();
+	int evaluerPlot();
 
-		void afficher();
+	void figer();
 
-		EtatRobot* getEtat();
+	void repartir();
 
-		void setEtat(EtatRobot*);
+	EtatRobot* getEtat();
 
-		string getOrdre();
+	void setEtat(EtatRobot*);
+
+	string getOrdre();
 };
 
 #endif

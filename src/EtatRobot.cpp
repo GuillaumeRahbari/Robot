@@ -54,11 +54,6 @@ EtatRobot* EtatRobot::poser() {
 	throw Bad_Mouvement();
 }
 
-void EtatRobot::afficher() {
-	// TODO - implement EtatRobot::afficher
-	throw "Not yet implemented";
-}
-
 EtatRobot* EtatRobot::initialisation(){
 	return AVide::getInstance();
 }

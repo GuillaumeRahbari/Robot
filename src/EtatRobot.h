@@ -16,8 +16,8 @@ using namespace std;
 
 class EtatRobot {
 
-	public:
-    
+public:
+
 	friend ostream& operator<< (ostream& os, const EtatRobot& etat);
 
 	virtual void ecritNom(ostream& os) const;
@@ -39,8 +39,6 @@ class EtatRobot {
 	virtual void peser();
 
 	virtual EtatRobot* poser();
-
-	virtual void afficher();
 
 	static EtatRobot* initialisation();
 

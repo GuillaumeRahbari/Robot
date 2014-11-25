@@ -33,8 +33,3 @@ void EnCharge::peser() {
 EtatRobot* EnCharge::rencontrerPlot() {
     return EnChargeFacePlot::getInstance();
 }
-
-void EnCharge::afficher() {
-    // TODO - implement EnCharge::afficher
-    throw "Not yet implemented";
-}

@@ -31,11 +31,6 @@ EtatRobot* AVideFacePlot::saisir() {
 	return EnChargeFacePlot::getInstance();
 }
 
-void AVideFacePlot::afficher() {
-	// TODO - implement AVideFacePlot::afficher
-	throw "Not yet implemented";
-}
-
 void AVideFacePlot::ecritNom(ostream& os) const{
 	os << "Le robot est dans l'etat : AVideFacePlot";
 }

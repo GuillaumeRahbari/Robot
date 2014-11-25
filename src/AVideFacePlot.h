@@ -32,8 +32,6 @@ public:
 	EtatRobot* tourner();
 
 	EtatRobot* saisir();
-
-	void afficher();
 };
 
 #endif

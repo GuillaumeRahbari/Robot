@@ -30,8 +30,3 @@ EtatRobot* AVide::tourner() {
 EtatRobot* AVide::rencontrerPlot() {
 	return AVideFacePlot::getInstance();
 }
-
-void AVide::afficher() {
-	// TODO - implement AVide::afficher
-	throw "Not yet implemented";
-}

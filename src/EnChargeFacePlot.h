@@ -31,8 +31,6 @@ public:
     virtual void peser();
     
     virtual EtatRobot* tourner();
-    
-    virtual void afficher();
 };
 
 #endif /* defined(__Robot__EnChargeFacePlot__) */
