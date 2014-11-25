@@ -5,7 +5,6 @@
 
 #include "Position.h"
 
-
 using namespace std;
 
 Position::Position (int x, int y) : x(x), y(y){}

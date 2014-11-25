@@ -4,7 +4,6 @@
 //
 
 #include "Plot.h"
-#include <iostream>
 
 using namespace std;
 
