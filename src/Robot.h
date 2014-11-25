@@ -28,7 +28,6 @@ private:
 	Position p;
 	string direction;
 	string ordre;
-	Observable vue;
 	Plot plot;
 	Objet ob;
 
