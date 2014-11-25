@@ -53,13 +53,7 @@ public:
 
 	void figer();
 
-	void repartir();
-
-	EtatRobot* getEtat();
-
-	void setEtat(EtatRobot*);
-
-	string getOrdre();
+	void repartir(); 
 };
 
 #endif

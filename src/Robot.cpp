@@ -129,15 +129,3 @@ void Robot::repartir() {
 		cout << &e << endl;
 	}
 }
-
-EtatRobot* Robot::getEtat(){
-	return etat;
-}
-
-void Robot::setEtat(EtatRobot* e){
-	etat = e;
-}
-
-string Robot::getOrdre(){
-	return ordre;
-}
