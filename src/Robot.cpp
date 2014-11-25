@@ -7,7 +7,7 @@
 //
 
 #include "Robot.h"
-#include "AVide.h"
+
 using namespace std;
 
 Robot::Robot(Position pos, string dir, string ordre, Plot plot, Objet obj) :

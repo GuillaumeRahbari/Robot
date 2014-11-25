@@ -17,6 +17,7 @@
 #include "Plot.h"
 #include "Position.h"
 #include "Observable.h"
+#include "AVide.h"
 
 using namespace std;
 
