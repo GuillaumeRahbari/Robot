@@ -1,3 +1,9 @@
+#	Makefile
+# 
+#	Created by Rémy Dupanloup on 23/11/2014.
+#	Copyright (c) 2014 Rémy Dupanloup. All rights reserved.
+#
+
 include default.mk
 
 ALL = prog
