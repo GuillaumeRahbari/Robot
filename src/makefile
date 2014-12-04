@@ -8,8 +8,8 @@ include default.mk
 
 ALL = prog
 
-prog : main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Invocateur.o Commande.o
-	$(CXX_LINK) -o prog  main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Invocateur.o Commande.o
+prog : main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Invocateur.o Commande.o CommandeRobot.o
+	$(CXX_LINK) -o prog  main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Invocateur.o Commande.o CommandeRobot.o
 
 extra_all :
 extra_clean :
@@ -30,5 +30,6 @@ Robot.o : Robot.h
 Observable.o : Observable.h
 Invocateur.o : Invocateur.h
 Commande.o : Commande.h
+CommandeRobot.o : CommandeRobot.h
 
 main.o : Robot.h ObservateurConcret.h
