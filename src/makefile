@@ -8,8 +8,8 @@ include default.mk
 
 ALL = prog
 
-prog : main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Invocateur.o Commande.o CommandeRobot.o Desexecute.o Avancer.o
-	$(CXX_LINK) -o prog  main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Invocateur.o Commande.o CommandeRobot.o Desexecute.o Avancer.o
+prog : main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Invocateur.o Commande.o CommandeRobot.o Desexecute.o Avancer.o Tourner.o Saisir.o Poser.o Peser.o RencontrerPlot.o EvaluerPlot.o CommandeFiger.o CommandeRepartir.o
+	$(CXX_LINK) -o prog  main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Invocateur.o Commande.o CommandeRobot.o Desexecute.o Avancer.o Tourner.o Saisir.o Poser.o Peser.o RencontrerPlot.o EvaluerPlot.o CommandeFiger.o CommandeRepartir.o
 
 extra_all :
 extra_clean :
@@ -33,5 +33,13 @@ Commande.o : Commande.h
 CommandeRobot.o : CommandeRobot.h
 Desexecute.o : Desexecute.h
 Avancer.o : Avancer.h
+Tourner.o : Tourner.h
+Saisir.o : Saisir.h
+Poser.o : Poser.h
+Peser.o : Peser.h
+RencontrerPlot.o : RencontrerPlot.h
+EvaluerPlot.o : EvaluerPlot.h
+CommandeRepartir.o : CommandeRepartir.h
+CommandeFiger.o : CommandeFiger.h
 
 main.o : Robot.h ObservateurConcret.h
