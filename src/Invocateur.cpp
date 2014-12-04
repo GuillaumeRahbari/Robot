@@ -2,10 +2,10 @@
 
 using namespace std;
 
-Invocateur::Invocateur(string fichier):chaine(""), f(fichier, ios::in){}
+Invocateur::Invocateur(string fichier):f(fichier, ios::in){}
 
 void Invocateur::readCommandes(){
-	//ifstream fichier("ListeCommandes.txt", ios::in);  // on ouvre le fichier en lecture
+	string chaine = "";	
 	if(f) {     // si l'ouverture a réussi
 		while(!f.eof()){    		    
     		f >> chaine;

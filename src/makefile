@@ -42,4 +42,4 @@ EvaluerPlot.o : EvaluerPlot.h
 CommandeRepartir.o : CommandeRepartir.h
 CommandeFiger.o : CommandeFiger.h
 
-main.o : Robot.h ObservateurConcret.h Invocateur.o
+main.o : Robot.h ObservateurConcret.h Invocateur.h

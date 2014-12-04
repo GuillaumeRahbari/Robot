@@ -10,8 +10,7 @@
 using namespace std;
 
 class Invocateur{
-private:
-	string chaine;
+private:	
 	ifstream f;
 	
 public:

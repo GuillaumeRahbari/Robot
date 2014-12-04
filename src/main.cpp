@@ -6,7 +6,7 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-	Invocateur i("ListeCommandes.txt");
+	Invocateur i("ListeCommandes.txt"); // Le fichier a ouvrir.
 
 
 return 0;
