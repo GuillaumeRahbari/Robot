@@ -9,6 +9,8 @@ public:
 	static CommandePeser maCommande;
 
 	CommandePeser(string);
+
+	void execute();
 };
 
 #endif

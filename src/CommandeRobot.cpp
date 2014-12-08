@@ -1,5 +1,7 @@
 #include "CommandeRobot.h"
 
+Robot CommandeRobot::r;
+
 Commande CommandeRobot::constructeurVirtuel(){
 	throw CommandeRobot::Bad_Commande();
 }

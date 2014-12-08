@@ -22,6 +22,8 @@ public:
 
 	int getInt();
 
+	string getString();
+
 	//Erreur
 	class Bad_Fichier{};
 	

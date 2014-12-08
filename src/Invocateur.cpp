@@ -22,3 +22,9 @@ int Invocateur::getInt(){
 	f >> number;
 	return number;
 }
+
+string Invocateur::getString(){
+	string chaine;
+	f >> chaine;
+	return chaine;
+}

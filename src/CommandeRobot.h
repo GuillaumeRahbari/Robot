@@ -6,11 +6,10 @@
 #include "Commande.h"
 #include "Robot.h"
 
-class CommandeRobot : public Commande{	
-protected:
-	Robot *robot;
-
+class CommandeRobot : public Commande{
 public:
+	static Robot r;
+
 	virtual void execute();
 
 	virtual void desexecute();

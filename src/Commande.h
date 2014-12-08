@@ -24,11 +24,7 @@ public:
 	static void nouvelleCommande(string s){
 		getCommandes()[s]->constructeurVirtuel().execute();
 	}
-
-	void addCommande(Commande c){
-		listeCommandes.push_back(c);
-	}
-
+	
 	//erreur
 	class Bad_Commande{};
 };
