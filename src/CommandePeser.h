@@ -10,7 +10,11 @@ public:
 
 	CommandePeser(string);
 
+	Commande constructeurVirtuel();
+
 	void execute();
+
+	void desexecute();
 };
 
 #endif

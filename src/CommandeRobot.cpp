@@ -7,7 +7,8 @@ Commande CommandeRobot::constructeurVirtuel(){
 }
 
 void CommandeRobot::execute(){
-	throw CommandeRobot::Bad_Commande();
+	cout << "je suis dans CommandeRobot" << endl;
+	// throw Commande::Bad_Commande();
 }
 
 void CommandeRobot::desexecute(){

@@ -8,5 +8,13 @@ CommandePeser::CommandePeser(string s){
 
 void CommandePeser::execute(){
 	Commande::listeCommandes.push_back(*this);
-	r.peser();
+	cout << "salut je suis ici" << endl;
+	//r.peser();
+}
+
+void CommandePeser::desexecute(){
+}
+
+Commande CommandePeser::constructeurVirtuel(){
+	return *this;
 }

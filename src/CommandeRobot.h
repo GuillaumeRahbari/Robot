@@ -15,8 +15,6 @@ public:
 	virtual void desexecute();
 
 	virtual Commande constructeurVirtuel();
-
-	class Bad_Commande{};
 };
 
 #endif

@@ -9,7 +9,11 @@ void Invocateur::readCommandes(){
 	if(f) {     // si l'ouverture a réussi
 		while(!f.eof()){    		    
     		f >> chaine;
-    		Commande::nouvelleCommande(chaine);   		
+    		try{
+    			Commande::nouvelleCommande(chaine);
+    		} catch (Commande::Bad_Commande){
+    			cerr << "Mauvaise commande" << endl;
+    		}   		
     	}
     	f.close();   
     } else {

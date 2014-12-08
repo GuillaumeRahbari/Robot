@@ -8,7 +8,8 @@ map<string, Commande*>& Commande::getCommandes(){
 }
 
 void Commande::execute(){
-	throw Bad_Commande();
+	cout << "je suis dans commande" << endl;
+	// throw Bad_Commande();
 }
 
 void Commande::desexecute(){
