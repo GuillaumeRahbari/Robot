@@ -8,10 +8,11 @@ include default.mk
 
 ALL = prog
 
-prog : main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Invocateur.o Commande.o CommandeRobot.o CommandeDesexecute.o CommandeAvancer.o CommandeTourner.o CommandeSaisir.o CommandePoser.o CommandePeser.o CommandeRencontrerPlot.o CommandeEvaluerPlot.o CommandeFiger.o CommandeRepartir.o
-	$(CXX_LINK) -o prog  main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Invocateur.o Commande.o CommandeRobot.o CommandeDesexecute.o CommandeAvancer.o CommandeTourner.o CommandeSaisir.o CommandePoser.o CommandePeser.o CommandeRencontrerPlot.o CommandeEvaluerPlot.o CommandeFiger.o CommandeRepartir.o
+prog : main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Commande.o Invocateur.o CommandeRobot.o CommandeDesexecute.o CommandeAvancer.o CommandeTourner.o CommandeSaisir.o CommandePoser.o CommandePeser.o CommandeRencontrerPlot.o CommandeEvaluerPlot.o CommandeFiger.o CommandeRepartir.o
+	$(CXX_LINK) -o prog  main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Commande.o Invocateur.o CommandeRobot.o CommandeDesexecute.o CommandeAvancer.o CommandeTourner.o CommandeSaisir.o CommandePoser.o CommandePeser.o CommandeRencontrerPlot.o CommandeEvaluerPlot.o CommandeFiger.o CommandeRepartir.o
 
 extra_all :
+
 extra_clean :
 
 Observateur.o : Observateur.h
@@ -28,8 +29,8 @@ Plot.o : Plot.h
 Position.o : Position.h
 Robot.o : Robot.h
 Observable.o : Observable.h
-Invocateur.o : Invocateur.h
 Commande.o : Commande.h
+Invocateur.o : Invocateur.h
 CommandeRobot.o : CommandeRobot.h
 CommandeDesexecute.o : CommandeDesexecute.h
 CommandeAvancer.o : CommandeAvancer.h

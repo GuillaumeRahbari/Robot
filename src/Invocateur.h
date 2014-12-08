@@ -7,6 +7,8 @@
 #include <fstream>
 #include <iostream>
 
+#include "Commande.h"
+
 using namespace std;
 
 class Invocateur{

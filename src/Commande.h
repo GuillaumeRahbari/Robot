@@ -3,46 +3,34 @@
 
 #include <stddef.h>
 #include <iostream>
-#include <cassert>
+#include <map>
+#include <vector>
 using namespace std;
 
 class Commande{
-
-};
-
-class Stack{
-private:  
-    
-    struct Cell
-    {
-        Commande com;
-        Cell *next;
-        Cell(Commande v, Cell *n = 0) : com(v), next(n) {}
-        ~Cell() {delete next;}
-    };    
-
-    Cell *head;         // Pointer to first cell
-    Cell *tail;         // Pointer to last cell
-
 public:
-    // Construction and destruction
-    Stack() : head(0), tail(0) {}     
-   	~Stack() {delete head;} 
+	static vector<Commande> listeCommandes; 
 
-    // Copy constructor and copy assignment
-    Stack(const Stack&);
-    Stack& operator=(const Stack&);
-    
-    bool is_empty() const {
-    	return head == 0;
-    }
-    
-    void push(Commande); // at the beginning
+	virtual void execute();
 
-    Commande pop();
+	virtual void desexecute();
 
-    // Exception
-    class Empty {};
+	virtual Commande constructeurVirtuel();
+
+	static map<string, Commande*>& getCommandes();
+
+	static vector<Commande> getListes();
+
+	static void nouvelleCommande(string s){
+		getCommandes()[s]->constructeurVirtuel().execute();
+	}
+
+	void addCommande(Commande c){
+		listeCommandes.push_back(c);
+	}
+
+	//erreur
+	class Bad_Commande{};
 };
 
 #endif
