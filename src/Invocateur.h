@@ -1,11 +1,17 @@
+//
+//  Invocateur.h
+//  Robot
+//
+//  Created on 23/12/2014.
+//  Copyright (c) 2014. All rights reserved.
+//
+
 #ifndef Invocateur_h
 #define Invocateur_h
 
-#include <stddef.h>
 #include <iostream>
-#include <string.h>
 #include <fstream>
-#include <iostream>
+#include <algorithm>
 
 #include "Commande.h"
 
@@ -13,7 +19,7 @@ using namespace std;
 
 class Invocateur{
 private:	
-	ifstream f;
+	ifstream file;
 	
 public:
 	Invocateur(string);
