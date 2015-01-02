@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <algorithm>
+#include <iterator>
 
 #include "Commande.h"
 

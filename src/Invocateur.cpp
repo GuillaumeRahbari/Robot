@@ -18,15 +18,15 @@ Invocateur::Invocateur(string fichier) : file(fichier.c_str(), ios::in){}
  */
 void Invocateur::readCommandes(){
 	if(file) 
-	{     // si l'ouverture a réussi
-		while(!file.eof())
-		{    		    
-			string nom;
-			file >> nom;
-			transform (nom.begin(), nom.end(), nom.begin(), ::tolower); // transforme a chaine de caractere en minuscule.
+	{   // si l'ouverture a réussi
+		istream_iterator<string> it(file); // Un iterateur lisant des strings depuis le fichier.
+    	istream_iterator<string> end; // Le signal de fin.
+
+		while(it != end)
+		{
 			try
 			{
-				Commande::nouvelleCommande(nom)->execute();
+				Commande::nouvelleCommande(*it)->execute();
 			}
 			catch (Commande::Bad_Commande)
 			{
