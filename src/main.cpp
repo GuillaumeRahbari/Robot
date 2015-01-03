@@ -2,6 +2,7 @@
 #include "Robot.h"
 #include "ObservateurConcret.h"
 #include "Invocateur.h"
+#include "Commande.h"
 
 using namespace std;
 
@@ -17,6 +18,9 @@ int main(int argc, const char * argv[]) {
 	}
 	catch (EtatRobot::Bad_Mouvement){
 		cerr << "Il y a un mouvement non autorisé dans le fichier" << endl;
+	}
+	catch (Commande::Invalid_Desexecute){
+		cerr << "On ne peut pas annuler cette action" << endl;
 	}
 
 	return 0;
