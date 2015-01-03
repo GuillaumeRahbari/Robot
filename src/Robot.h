@@ -42,6 +42,8 @@ public:
 
     Plot getPlot() {return plot;}
 
+    string getDir() {return direction;}
+
 	void avancer(Position);
 
 	void tourner(string);
