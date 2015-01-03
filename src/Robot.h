@@ -38,6 +38,8 @@ public:
 
     Position getPos() {return p;}
 
+    Objet getObjet() {return ob;}
+
 	void avancer(Position);
 
 	void tourner(string);
