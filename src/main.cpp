@@ -15,6 +15,9 @@ int main(int argc, const char * argv[]) {
 	} catch (Invocateur::Bad_Fichier){
 		cerr << "Le fichier choisi n'existe pas" << endl;
 	}
+	catch (EtatRobot::Bad_Mouvement){
+		cerr << "Il y a un mouvement non autorisé dans le fichier" << endl;
+	}
 
 	return 0;
 }
