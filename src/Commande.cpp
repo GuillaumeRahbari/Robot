@@ -2,6 +2,8 @@
 
 vector<Commande*> Commande::cmdExecutees;
 
+map<string, vector<Commande*> > Commande::macroCommandes;
+
 Commande::Commande (string s){
 	commandesInscrites()[s] = this;
 }

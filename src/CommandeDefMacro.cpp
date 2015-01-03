@@ -14,7 +14,7 @@ Commande* CommandeDefMacro::constructeur(Robot* r, Invocateur* inv) {
 		fin = dynamic_cast<CommandeFinMacro*>(cmd);
 	}
 
-	Commande::macroCommandes.insert(pair<string, vector<Commande*> > (nom,commandes));
+	Commande::macroCommandes.insert(pair<string,vector<Commande*> > (nom,commandes));
 
     return this;
 }
