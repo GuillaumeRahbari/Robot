@@ -2,6 +2,7 @@
 #define Commande_RencontrerPlot_h
 
 #include "CommandeRobot.h"
+#include "Plot.h"
 
 class CommandeRencontrerPlot : public CommandeRobot{
 private:
