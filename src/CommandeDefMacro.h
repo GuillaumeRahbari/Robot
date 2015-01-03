@@ -4,9 +4,6 @@
 #include "CommandeFinMacro.h"
 
 class CommandeDefMacro : public Commande{
-private:
-	Objet o;
-
 public:
 	static CommandeDefMacro monExemplaire;
 

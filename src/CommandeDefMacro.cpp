@@ -1,5 +1,4 @@
 #include "CommandeDefMacro.h"
-#include "Commande.h"
 
 CommandeDefMacro CommandeDefMacro::monExemplaire("DEFMACRO");
 
