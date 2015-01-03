@@ -8,6 +8,7 @@ Commande* CommandeDesexecute::constructeur(Robot* r, Invocateur* inv) {
 
 void CommandeDesexecute::execute() {
     Commande::cmdExecutees[Commande::cmdExecutees.size()-1]->desexecute();
+    Commande::cmdExecutees.pop_back();
 }
 
 void CommandeDesexecute::desexecute() {
