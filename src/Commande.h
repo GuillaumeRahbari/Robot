@@ -9,24 +9,23 @@ using namespace std;
 
 class Commande{
 public:
-	static vector<Commande> listeCommandes; 
+	// Variables
+	static vector<Commande*> cmdExecutees;
 
-	virtual void execute();
+	// Fonctions
+	virtual void execute() = 0;
 
 	virtual void desexecute();
 
-	virtual Commande constructeurVirtuel();
+	virtual Commande* constructeur();
 
 	static map<string, Commande*>& getCommandes();
 
-	static vector<Commande> getListes();
-
-	static void nouvelleCommande(string s){
-		getCommandes()[s]->constructeurVirtuel().execute();
-	}
+	static Commande* nouvelleCommande(string s);
 	
 	//erreur
 	class Bad_Commande{};
+	class Invalid_Desexecute{};
 };
 
 #endif
