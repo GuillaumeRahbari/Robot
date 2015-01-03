@@ -29,12 +29,12 @@ ostream& operator<< (ostream& flux, Robot const& robot){
     return flux;
 }
 
-void Robot::avancer(int x, int y) {
+void Robot::avancer(Position pos) {
 	try{
-		ordre = "avancer en "+to_string(x)+", "+to_string(y);
+		ordre = "avancer en "+to_string(pos.getX())+", "+to_string(pos.getY());
 		etat->avancer();
-		p.setX(x);
-		p.setY(y);
+		p.setX(pos.getX());
+		p.setY(pos.getY());
 		notifier();
 	} catch (exception e){
 		cout << &e << endl;

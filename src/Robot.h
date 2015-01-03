@@ -36,7 +36,9 @@ public:
 
     friend ostream& operator<< (ostream&, Robot const&);   
 
-	void avancer(int, int);
+    Position getPos() {return p;}
+
+	void avancer(Position);
 
 	void tourner(string);
 
