@@ -23,17 +23,17 @@ void Invocateur::readCommandes(Robot* r){
 		istream_iterator<string> it(file); // Un iterateur lisant des strings depuis le fichier.
     	istream_iterator<string> end; // Le signal de fin.
 
-    	Commande* cmd;
 		while(it != end)
 		{
 			try
 			{
-				cmd = Commande::nouvelleCommande(*it, r, this);
+				Commande::nouvelleCommande(*it, r, this)->execute();
 			}
 			catch (Commande::Bad_Commande)
 			{
 				cerr << "ERREUR : Commande Invalide" << endl;
-			} 		
+			}
+			++it; 		
     	}
     	file.close();   
     } 
