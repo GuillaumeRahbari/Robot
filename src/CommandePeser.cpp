@@ -1,20 +1,13 @@
 #include "CommandePeser.h"
 
-CommandePeser CommandePeser::maCommande("PESER");
+CommandePeser CommandePeser::monExemplaire("PESER");
 
-CommandePeser::CommandePeser(string s){
-	Commande::getCommandes()[s] = this;
+Commande* CommandePeser::constructeur(Robot* r, Invocateur* inv) {
+	Commande* cmd = new CommandePeser("SAISIR", r);
+	Commande::cmdExecutees.push_back(cmd);
+    return cmd;
 }
 
 void CommandePeser::execute(){
-	Commande::listeCommandes.push_back(*this);
-	cout << "salut je suis ici" << endl;
-	//r.peser();
-}
-
-void CommandePeser::desexecute(){
-}
-
-Commande CommandePeser::constructeurVirtuel(){
-	return *this;
+	robot->peser();
 }

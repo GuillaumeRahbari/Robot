@@ -1,20 +1,19 @@
 #ifndef Commande_Peser_h
 #define Commande_Peser_h
 
-#include <string>
 #include "CommandeRobot.h"
 
 class CommandePeser : public CommandeRobot{
 public:
-	static CommandePeser maCommande;
+	static CommandePeser monExemplaire;
 
-	CommandePeser(string);
+	CommandePeser(string nom) : CommandeRobot(nom) {};
 
-	Commande constructeurVirtuel();
+	CommandePeser(string nom, Robot* r) : CommandeRobot(nom, r) {};
 
-	void execute();
+	virtual Commande* constructeur(Robot*, Invocateur* inv);
 
-	void desexecute();
+	virtual void execute();
 };
 
 #endif
