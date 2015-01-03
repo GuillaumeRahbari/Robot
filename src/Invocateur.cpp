@@ -22,11 +22,13 @@ void Invocateur::readCommandes(){
 		istream_iterator<string> it(file); // Un iterateur lisant des strings depuis le fichier.
     	istream_iterator<string> end; // Le signal de fin.
 
+    	Commande* cmd;
 		while(it != end)
 		{
 			try
 			{
-				Commande::nouvelleCommande(*it)->execute();
+				cmd = Commande::nouvelleCommande(*it);
+				Commande::cmdExecutees.push_back(cmd);
 			}
 			catch (Commande::Bad_Commande)
 			{
