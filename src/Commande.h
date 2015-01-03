@@ -14,6 +14,8 @@ class Commande{
 public:
 	// Variables
 	static vector<Commande*> cmdExecutees;
+	
+	static map<string, vector<Commande*> > macroCommandes;
 
 	// Constructeur
 	Commande (string);
