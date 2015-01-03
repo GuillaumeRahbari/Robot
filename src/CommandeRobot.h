@@ -15,8 +15,6 @@ public:
 
 	virtual void execute() = 0;
 
-	virtual void desexecute() = 0;
-
 	virtual Commande* constructeur(Robot*, Invocateur*) = 0;
 };
 
