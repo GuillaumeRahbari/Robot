@@ -29,7 +29,6 @@ void Invocateur::readCommandes(Robot* r){
 			try
 			{
 				cmd = Commande::nouvelleCommande(*it, r, this);
-				Commande::cmdExecutees.push_back(cmd);
 			}
 			catch (Commande::Bad_Commande)
 			{
