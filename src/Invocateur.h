@@ -12,8 +12,7 @@
 #include <iostream>
 #include <fstream>
 #include <iterator>
-
-#include "Commande.h"
+#include "Robot.h"
 
 using namespace std;
 
@@ -24,7 +23,7 @@ private:
 public:
 	Invocateur(string);
 
-	void readCommandes();
+	void readCommandes(Robot* r);
 
 	int getInt();
 

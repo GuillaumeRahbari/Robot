@@ -1,8 +1,6 @@
 #include "CommandeRobot.h"
 
-Robot CommandeRobot::r;
-
-Commande CommandeRobot::constructeurVirtuel(){
+Commande* CommandeRobot::constructeur(Robot*, Invocateur* inv){
 	throw CommandeRobot::Bad_Commande();
 }
 

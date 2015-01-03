@@ -7,6 +7,7 @@
 //
 
 #include "Invocateur.h"
+#include "Commande.h"
 
 using namespace std;
 
@@ -16,7 +17,7 @@ Invocateur::Invocateur(string fichier) : file(fichier.c_str(), ios::in){}
  * Cette fonction permet de lire toutes les commandes présentes dans le fichier.
  * Chaque commande lue est executee.
  */
-void Invocateur::readCommandes(){
+void Invocateur::readCommandes(Robot* r){
 	if(file) 
 	{   // si l'ouverture a réussi
 		istream_iterator<string> it(file); // Un iterateur lisant des strings depuis le fichier.
@@ -27,7 +28,7 @@ void Invocateur::readCommandes(){
 		{
 			try
 			{
-				cmd = Commande::nouvelleCommande(*it);
+				cmd = Commande::nouvelleCommande(*it, r, this);
 				Commande::cmdExecutees.push_back(cmd);
 			}
 			catch (Commande::Bad_Commande)

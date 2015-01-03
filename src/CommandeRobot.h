@@ -1,20 +1,23 @@
 #ifndef Commande_Robot_h
 #define Commande_Robot_h
 
-// #include <stddef.h>
-// #include <iostream>
 #include "Commande.h"
 #include "Robot.h"
 
 class CommandeRobot : public Commande{
+protected:
+	Robot* robot;
+
 public:
-	static Robot r;
+	CommandeRobot(string nom) : Commande(nom) {};
 
-	virtual void execute();
+	CommandeRobot (string nom, Robot* r) : Commande(nom), robot(r) {};
 
-	virtual void desexecute();
+	virtual void execute() = 0;
 
-	virtual Commande constructeurVirtuel();
+	virtual void desexecute() = 0;
+
+	virtual Commande* constructeur(Robot*, Invocateur*) = 0;
 };
 
 #endif
