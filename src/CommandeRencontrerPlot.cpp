@@ -9,5 +9,10 @@ Commande* CommandeRencontrerPlot::constructeur(Robot* r, Invocateur* inv) {
 }
 
 void CommandeRencontrerPlot::execute() {
+	oldPlot = robot->getPlot();
     robot->rencontrerPlot(p);
+}
+
+void CommandeRencontrerPlot::desexecute(){
+	robot->rencontrerPlot(oldPlot);
 }

@@ -8,6 +8,8 @@ class CommandeRencontrerPlot : public CommandeRobot{
 private:
 	Plot p;
 
+	Plot oldPlot;
+
 public:
 	static CommandeRencontrerPlot monExemplaire;
 
@@ -18,6 +20,8 @@ public:
 	virtual Commande* constructeur(Robot* r, Invocateur* inv);
 
 	virtual void execute();
+
+	virtual void desexecute();
 };
 
 #endif
