@@ -11,5 +11,5 @@ void CommandeDesexecute::execute() {
 }
 
 void CommandeDesexecute::desexecute() {
-    ;
+    throw Commande::Bad_Commande();
 }
