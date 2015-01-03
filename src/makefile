@@ -8,8 +8,8 @@ include default.mk
 
 ALL = prog
 
-prog : main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Commande.o Invocateur.o CommandeRobot.o CommandeDesexecute.o CommandeAvancer.o CommandeTourner.o CommandeSaisir.o CommandePoser.o CommandePeser.o CommandeRencontrerPlot.o CommandeEvaluerPlot.o CommandeFiger.o CommandeRepartir.o
-	$(CXX_LINK) -o prog  main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Commande.o Invocateur.o CommandeRobot.o CommandeDesexecute.o CommandeAvancer.o CommandeTourner.o CommandeSaisir.o CommandePoser.o CommandePeser.o CommandeRencontrerPlot.o CommandeEvaluerPlot.o CommandeFiger.o CommandeRepartir.o
+prog : main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Commande.o Invocateur.o CommandeRobot.o CommandeDesexecute.o CommandeAvancer.o CommandeTourner.o CommandeSaisir.o CommandePoser.o CommandePeser.o CommandeRencontrerPlot.o CommandeEvaluerPlot.o CommandeFiger.o CommandeRepartir.o CommandeFinMacro.o CommandeDefMacro.o CommandeAppeler.o
+	$(CXX_LINK) -o prog  main.o Observateur.o ObservateurConcret.o AVide.o AVideFacePlot.o EnCharge.o EnChargeFacePlot.o EnRoute.o EtatRobot.o Figer.o Objet.o Plot.o Position.o Robot.o Observable.o Commande.o Invocateur.o CommandeRobot.o CommandeDesexecute.o CommandeAvancer.o CommandeTourner.o CommandeSaisir.o CommandePoser.o CommandePeser.o CommandeRencontrerPlot.o CommandeEvaluerPlot.o CommandeFiger.o CommandeRepartir.o CommandeFinMacro.o CommandeDefMacro.o CommandeAppeler.o
 
 extra_all :
 
@@ -42,5 +42,8 @@ CommandeRencontrerPlot.o : CommandeRencontrerPlot.h
 CommandeEvaluerPlot.o : CommandeEvaluerPlot.h
 CommandeRepartir.o : CommandeRepartir.h
 CommandeFiger.o : CommandeFiger.h
+CommandeFinMacro.o : CommandeFinMacro.h Commande.h
+CommandeDefMacro.o : CommandeDefMacro.h
+CommandeAppeler.o : CommandeAppeler.h
 
 main.o : Robot.h ObservateurConcret.h Invocateur.h
