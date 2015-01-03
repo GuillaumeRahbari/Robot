@@ -40,6 +40,8 @@ public:
 
     Objet getObjet() {return ob;}
 
+    Plot getPlot() {return plot;}
+
 	void avancer(Position);
 
 	void tourner(string);
